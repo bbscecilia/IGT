@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="LocalEGM">
+</Property><Property Name="Solution File" Value="C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\LocalEGM.sln">
+</Property><Property Name="User Options File" Value="C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\LocalEGM.suo">
+</Property><Property Name="Date" Value="Friday, August 13, 2010">
+</Property><Property Name="Time" Value="9:22 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="LocalEGM.sln" Description="File successfully backed up as C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\Backup\LocalEGM.sln">
+</Event><Event ErrorLevel="0" Project="" Source="LocalEGM.suo" Description="File successfully backed up as C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\Backup\LocalEGM.suo">
+</Event><Event ErrorLevel="0" Project="LocalEGM" Source="LocalEGM.csproj" Description="Project file successfully backed up as C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\Backup\LocalEGM.csproj">
+</Event><Event ErrorLevel="0" Project="LocalEGM" Source="ICompactEGM.cs" Description="File successfully backed up as C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\Backup\ICompactEGM.cs">
+</Event><Event ErrorLevel="0" Project="LocalEGM" Source="ILocalEGM.cs" Description="File successfully backed up as C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\Backup\ILocalEGM.cs">
+</Event><Event ErrorLevel="0" Project="LocalEGM" Source="LocalEGM.cs" Description="File successfully backed up as C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\Backup\LocalEGM.cs">
+</Event><Event ErrorLevel="0" Project="LocalEGM" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="LocalEGM" Source="LocalEGM.snk" Description="File successfully backed up as C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\Backup\LocalEGM.snk">
+</Event><Event ErrorLevel="0" Project="LocalEGM" Source="LocalEGM.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LocalEGM" Source="LocalEGM.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LocalEGMSetup.vdproj" Source="LocalEGMSetup\LocalEGMSetup.vdproj" Description="Project file successfully backed up as C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\Backup\LocalEGMSetup\LocalEGMSetup.vdproj">
+</Event><Event ErrorLevel="0" Project="RegistryGACCustomAction" Source="LocalEGMSetup\RegistryGACCustomAction\RegistryGACCustomAction.csproj" Description="Project file successfully backed up as C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\Backup\LocalEGMSetup\RegistryGACCustomAction\RegistryGACCustomAction.csproj">
+</Event><Event ErrorLevel="0" Project="RegistryGACCustomAction" Source="LocalEGMSetup\RegistryGACCustomAction\Program.cs" Description="File successfully backed up as C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\Backup\LocalEGMSetup\RegistryGACCustomAction\Program.cs">
+</Event><Event ErrorLevel="0" Project="RegistryGACCustomAction" Source="LocalEGMSetup\RegistryGACCustomAction\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\Backup\LocalEGMSetup\RegistryGACCustomAction\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="RegistryGACCustomAction" Source="LocalEGMSetup\RegistryGACCustomAction\RegistryGACCustomAction.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RegistryGACCustomAction" Source="LocalEGMSetup\RegistryGACCustomAction\RegistryGACCustomAction.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="LocalEGM.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="LocalEGM.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LocalEGM" Source="LocalEGM.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="RegistryGACCustomAction" Source="LocalEGMSetup\RegistryGACCustomAction\RegistryGACCustomAction.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConfigItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Configuration</Name>
+  <Children>
+    <ConfigItem>
+      <Name>International</Name>
+      <ConfigKey>INTERNATIONAL RELEASE</ConfigKey>
+    </ConfigItem>
+    <ConfigItem>
+      <Name>Bank</Name>
+      <Children>
+        <ConfigItem>
+          <Name>MachineCreditLimit</Name>
+          <ConfigKey>MACHINE'S CREDIT LIMIT AMOUNT</ConfigKey>
+        </ConfigItem>
+        <ConfigItem>
+          <Name>CashInLimit</Name>
+          <ConfigKey>CASH IN LIMIT</ConfigKey>
+        </ConfigItem>
+        <ConfigItem>
+          <Name>NonCashInLimit</Name>
+          <ConfigKey>NON CASH IN LIMIT</ConfigKey>
+        </ConfigItem>
+        <ConfigItem>
+          <Name>TransferToTicketLimit</Name>
+          <ConfigKey>TRANSFER TO TICKET LIMIT</ConfigKey>
+        </ConfigItem>
+        <ConfigItem>
+          <Name>AllowCashInDuringGamePlay</Name>
+          <ConfigKey>ALLOW CASH IN WHILE PLAYING GAME</ConfigKey>
+        </ConfigItem>
+        <ConfigItem>
+          <Name>WinCapLimit</Name>
+          <ConfigKey>MACHINE WIDE WIN CAP LIMIT</ConfigKey>
+        </ConfigItem>
+        <ConfigItem>
+          <Name>WinHandpayLimit</Name>
+          <ConfigKey>WIN HANDPAY LOCKUP AMOUNT</ConfigKey>
+        </ConfigItem>
+        <ConfigItem>
+          <Name>W2GResetLimit</Name>
+          <ConfigKey>MAX HANDPAY WE CAN RESET TO CREDIT METER</ConfigKey>
+        </ConfigItem>
+        <ConfigItem>
+          <Name>DoubleUpLimit</Name>
+          <ConfigKey>DOUBLE UP LIMIT</ConfigKey>
+        </ConfigItem>
+      </Children>
+    </ConfigItem>
+    <ConfigItem>
+      <Name>CoinDevice</Name>
+      <Children>
+        <ConfigItem>
+          <Name>AccountingDenom</Name>
+          <ConfigKey>ACCOUNTING DENOMINATION</ConfigKey>
+        </ConfigItem>
+        <ConfigItem>
+          <Name>HardMeterDenom</Name>
+          <ConfigKey>HARD METER DENOMINATION</ConfigKey>
+        </ConfigItem>
+        <ConfigItem>
+          <Name>DenomsAvailableToPlayer</Name>
+          <ConfigKey>MACHINE WIDE ENABLED PLAYER DENOMINATIONS</ConfigKey>
+          <ItemType>Array</ItemType>
+          <ArrayName>Denom</ArrayName>
+        </ConfigItem>
+      </Children>
+    </ConfigItem>
+    <ConfigItem>
+      <Name>Attract</Name>
+      <Children>
+        <ConfigItem>
+          <Name>GameAttracts</Name>
+          <ConfigKey>ENABLE GAME ATTRACTS</ConfigKey>
+        </ConfigItem>
+        <ConfigItem>
+          <Name>SystemAttracts</Name>
+          <ConfigKey>ENABLE SYSTEM ATTRACTS</ConfigKey>
+        </ConfigItem>
+        <ConfigItem>
+          <Name>AttractDelay</Name>
+          <ConfigKey>INACTIVITY ENTER ATTRACT MODE DELAY</ConfigKey>
+        </ConfigItem>
+      </Children>
+    </ConfigItem>
+  </Children>
+</ConfigItem>

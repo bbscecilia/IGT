@@ -1,0 +1,22 @@
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\bin\Release\RegistryGACCustomAction.exe
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\bin\Release\RegistryGACCustomAction.pdb
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\obj\Release\RegistryGACCustomAction.exe
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\obj\Release\RegistryGACCustomAction.pdb
+C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\bin\Release\RegistryGACCustomAction.exe
+C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\bin\Release\RegistryGACCustomAction.pdb
+C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\obj\Release\ResolveAssemblyReference.cache
+C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\obj\Release\RegistryGACCustomAction.exe
+C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\obj\Release\RegistryGACCustomAction.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\bin\Release\RegistryGACCustomAction.exe.config
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\bin\Release\RegistryGACCustomAction.exe
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\bin\Release\RegistryGACCustomAction.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\obj\Release\RegistryGACCustomAction.csprojResolveAssemblyReference.cache
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\obj\Release\RegistryGACCustomAction.exe
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\obj\Release\RegistryGACCustomAction.pdb
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\bin\Release\RegistryGACCustomAction.exe.config
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\bin\Release\RegistryGACCustomAction.exe
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\bin\Release\RegistryGACCustomAction.pdb
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\obj\Release\RegistryGACCustomAction.csprojResolveAssemblyReference.cache
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\obj\Release\RegistryGACCustomAction.exe
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\LocalEGMSetup\RegistryGACCustomAction\obj\Release\RegistryGACCustomAction.pdb

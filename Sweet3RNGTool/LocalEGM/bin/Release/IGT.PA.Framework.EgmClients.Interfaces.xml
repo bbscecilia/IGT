@@ -1,0 +1,2689 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IGT.PA.Framework.EgmClients.Interfaces</name>
+    </assembly>
+    <members>
+        <member name="T:IGT.PA.Framework.EgmClients.HeaderInformation.PaytableHeader">
+            <summary>
+            This class implements the IPaytableHeader interface.
+            <see cref="T:IGT.PA.Framework.EgmClients.HeaderInformation.IPaytableHeader"/>
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.HeaderInformation.IPaytableHeader">
+            <summary>
+            This interface defines the objects that compose in the header information of a paytable file.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.HeaderInformation.IPaytableHeader.PaytableName">
+            <summary>
+            The name of the Paytable. Default value is "".
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.HeaderInformation.IPaytableHeader.Percentage">
+            <summary>
+            The Paytable payback percentage. Default value is 100.00%.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.HeaderInformation.IPaytableHeader.CreditDivisor">
+            <summary>
+            The credit divisor of the paytable. Default value is 1.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.HeaderInformation.PaytableHeader.PaytableName" -->
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.HeaderInformation.PaytableHeader.Percentage" -->
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.HeaderInformation.PaytableHeader.CreditDivisor" -->
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.WinLattitude">
+            <summary>
+            These are the horizontal options for a win direction.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.WinLongitude">
+            <summary>
+            These are the vertical options for a win direction.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.Direction">
+            <summary>
+            These are the possible directions for a win in a layout such as line, multiway, scatter or pattern.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.WinLayoutType">
+            <summary>
+            Different layout types that are available.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.LayoutPattern">
+            <summary>
+            Different layout patterns that may be used.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.LineToPlayType">
+            <summary>
+            The type of line to play.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.WagerType">
+            <summary>
+            The type of wager for a given win award.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.GameTriggerType">
+            <summary>
+            The type of game that is being triggered.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.SelectionType">
+            <summary>
+            The Selection type per bet. Bet All vs Bet Max, etc...
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.Interfaces.ISasApi">
+            <summary>
+            This interface contains SAS specific members for communicating to the EGM
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi">
+            <summary>
+            This interface contains all the members used to define a generic EGM API.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IBaseDataObject">
+            <summary>
+            This interface conatins base (common) properties and interface methods to be used throughout the common Automation Framework
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IBaseDataObject.Name">
+            <summary>
+            The name of the object that uniquely identifies the object
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IBaseDataObject.Code">
+            <summary>
+            A short name used to identify the object
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IBaseDataObject.Id">
+            <summary>
+            The numeric identifier for an object that uniquely identifies it
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IBaseDataObject.IsActive">
+            <summary>
+            Determines whether the object is an active record, when true; or inactive, when false
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IBaseDataObject.NameChanged">
+            <summary>
+            This event fires when the <see cref="P:IGT.PA.Framework.EgmClients.Interfaces.IBaseDataObject.Name"/> is changed
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IBaseDataObject.CodeChanged">
+            <summary>
+            This event fires when the <see cref="P:IGT.PA.Framework.EgmClients.Interfaces.IBaseDataObject.Code"/> is changed
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IBaseDataObject.IdChanged">
+            <summary>
+            This event fires when the <see cref="P:IGT.PA.Framework.EgmClients.Interfaces.IBaseDataObject.Id"/> is changed
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.SendCommand(System.String,System.Object[])">
+            <summary>
+            This is the method that routes all commands to the EGM via the Communications object.  All other API methods should use this command for sending commands to the EGM
+            </summary>
+            <param name="command">The name of the RPC command to be executed on the EGM</param>
+            <param name="arguments">The argument string to be used by the RPC command for processing on the EGM</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.InsertBill(System.Int32,System.Int32,IGT.PA.Framework.EgmClients.Interfaces.Enumerations.CountryCode)">
+            <summary>
+            Simulates insertion of a bill into the bill acceptor
+            </summary>
+            <param name="denomination">The denomination in base units (pennies for US currency), the default is 100 (one dollar)</param>
+            <param name="nbrBills">The number of bills of this type to insert (the default is 1)</param>
+            <param name="country">The country code to use (the default is 1 signifying the USA)</param>
+            <returns>true on success</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.InsertCoin(System.Int32)">
+            <summary>
+            Simulates the insertion of a coin into the coin acceptor
+            </summary>
+            <param name="nbrCoins">The number of coins to drop into the acceptor</param>
+            <remarks>Coin acceptors are configured to accept only one coin denomination</remarks>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.RemoveCoin(System.Int32)">
+            <summary>
+            Simulates the removal of a coin from the coin acceptor
+            </summary>
+            <param name="nbrCoins">The number of coins to remove from the acceptor</param>
+            <remarks>Coin acceptors are configured to remove only one coin denomination</remarks>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.GetCurrentMenuContext" -->
+        <!-- Badly formed XML comment ignored for member "M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.ClearPeriodMeters" -->
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.InsertVoucher(System.String)">
+            <summary>
+            Simulates the insertion of a voucher ticket
+            </summary>
+            <param name="voucherID">The autorization ID for the voucher ticket</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.InsertPlayerCard(System.String)">
+            <summary>
+            Simulates the insertion of a player card on the EGM
+            </summary>
+            <param name="cardNbr">The player card number that uniquely identifies teh patron</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.RemovePlayerCard">
+            <summary>
+            Simulates the removal of a player card if one is inserted
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.SetCoinTilt(System.Boolean)">
+            <summary>
+            Set the coin tilt
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.SetHopperTilt(System.Boolean)">
+            <summary>
+            Set the hopper tilt
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.PostBvError(System.Boolean,IGT.PA.Framework.EgmClients.Interfaces.Enumerations.BillValidatorError)">
+            <summary>
+            Set the bill validator error tilt
+            </summary>
+            <param name="setError">true or false</param>
+            <param name="errorCode">Bill validator tilt</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.PostPrinterError(System.Boolean,IGT.PA.Framework.EgmClients.Interfaces.Enumerations.PrinterError)">
+            <summary>
+            Set the Printer error tilt
+            </summary>
+            <param name="setError">true or false</param>
+            <param name="errorCode">Printer tilt</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.PostHopperError(System.Boolean,IGT.PA.Framework.EgmClients.Interfaces.Enumerations.HopperError)">
+            <summary>
+            Set the hopper error tilt
+            </summary>
+            <param name="setError">true or false</param>
+            <param name="errorCode">Hopper tilt</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.PostHopperStatus(IGT.PA.Framework.EgmClients.Interfaces.Enumerations.HopperStatus)">
+            <summary>
+            Set the hopper status 
+            </summary>
+            <param name="hopperStatus">Hopper state</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.PostCoinAccError(System.Boolean,IGT.PA.Framework.EgmClients.Interfaces.Enumerations.CoinAcceptorError)">
+            <summary>
+            Set the Coin Acceptor 
+            </summary>
+            <param name="setError">true or false</param>
+            <param name="errorCode">Coin Acceptor tilt</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.TouchScreen(System.Double,System.Double,System.Boolean,System.Double,System.Double)">
+            <summary>
+            Simulates a screen touch and/or  screen drag
+            </summary>
+            <param name="startX">The start X position of the screen touch</param>
+            <param name="startY">The start Y position of the screen touch</param>
+            <param name="releaseTouch">Release the screen touch after the touch/drag is executed if true, else keep touching the screen until a ReleaseTouchSceen() is executed</param>
+            <param name="endX">The ending X position of a touch screen drag; if set to the default of NaN, then no drag is executed</param>
+            <param name="endY">The ending Y position of a touch screen drag; if set to the default of NaN, then no drag is executed</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.SendMouseClick(System.Double,System.Double)">
+            <summary>
+            Sends  mouse click
+            </summary>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.ReleaseTouchScreen">
+            <summary>
+            Releases the touch screen from all active touch screen presses
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.OpenDoor(IGT.PA.Framework.EgmClients.Interfaces.Enumerations.DoorType)">
+            <summary>
+            Opens the designated door type if it is currently closed
+            </summary>
+            <param name="door">The <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.DoorType"/> to open on the EGM</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.CloseDoor(IGT.PA.Framework.EgmClients.Interfaces.Enumerations.DoorType)">
+            <summary>
+            Opens the designated door type if it is currently closed
+            </summary>
+            <param name="door">The <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.DoorType"/> to open on the EGM</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.ActivateSwitch(IGT.PA.Framework.EgmClients.Interfaces.Enumerations.SwitchType)">
+            <summary>
+            Opens or turns on a switch if it is currently closed
+            </summary>
+            <param name="switchType">The <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.SwitchType"/> to activate</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.DeactivateSwitch(IGT.PA.Framework.EgmClients.Interfaces.Enumerations.SwitchType)">
+            <summary>
+            Closes or turns on a switch if it is currently closed
+            </summary>
+            <param name="switchType">The <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.SwitchType"/> to activate</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.ToggleSwitch(IGT.PA.Framework.EgmClients.Interfaces.Enumerations.SwitchType)">
+            <summary>
+            Changes the switch to the opposite switch state,i.e., from open to closed or vice versa
+            </summary>
+            <param name="switchType">The <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.SwitchType"/> to activate</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.CycleSwitch(IGT.PA.Framework.EgmClients.Interfaces.Enumerations.SwitchType)">
+            <summary>
+            Toggles the switch twice, i.e., changing its state to the opposite state, and changing it back to its original state
+            </summary>
+            <param name="switchType">The <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.SwitchType"/> to activate</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.PressButton(System.Int32,System.Boolean)">
+            <summary>
+            This simulates the pressing of a button on the EGM
+            </summary>
+            <param name="buttonId">The button panel ID of the button to be pressed</param>
+            <param name="releaseButton"> When set to the default of true, the button is released immediately afetr being pressed; if false, then the button remains pressed after this command is sent</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.ReleaseButton(System.Int32)">
+            <summary>
+            Releases the button if it is currently pressed down/engaged
+            </summary>
+            <param name="buttonId">The button panel ID of the button to be pressed</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.CallforService">
+            <summary>
+            Presses the EGM's Service or Change Button
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.CashOut">
+            <summary>
+            Presses the EGM's Cash Out or Take Win button
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.Spin">
+            <summary>
+            Presses the EGMs Spin button 
+                    <!-- and returns information about the spin in an XML formatted document -->
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.PlayMaxBet">
+            <summary>
+            Plays the maximim lines, bet, and bonus bet on a game
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.SetReelStops(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Sets the reel stops on the ordinal row
+            </summary>
+            <param name="numbers">The list of numbers to be sent to the EGM for spin resolution</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.SetRandomNumbers(System.Collections.Generic.List{System.Collections.Generic.List{System.Int32}})">
+            <summary>
+            Override the standard RNG with sets of random number values.
+            </summary>
+            <param name="rnSets">Sets of random number values</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.ResetRng">
+            <summary>
+            Restores RNG to it's default state.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.SetConfigurationInfo(System.Xml.Linq.XDocument)">
+            <summary>
+            Sets the EGM settings to match what is contained in the settings file
+            </summary>
+            <param name="settings">A settings document conatining the value for each parameter to be set</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.SetTilt(IGT.PA.Framework.EgmClients.Interfaces.Enumerations.TiltType)">
+            <summary>
+            Sets a particular tilt on teh EGM
+            </summary>
+            <param name="tiltType">The type of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.TiltType">Tilt</see> to send to the EGM</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.KillRngProcess">
+            <summary>
+            Causes a crash by killing the Rng process
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.GetConfigurationInfo">
+            <summary>
+            Gets the EGM configuration info from the EGM and passes it back as an XML document, e.g., denomination, bill acceptor, coin acceptor denomination, i.p. address, etc.
+            </summary>
+            <returns>The settings for the EGM as XML</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.GetGameInfo">
+            <summary>
+            Gets Game specific information such as themes installed, paytables, reelstrips, etc. and returns it as an XML document
+            </summary>
+            <returns>The game specific info from the EGM</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.GetSystemInfo">
+            <summary>
+            Gets information specific to the EGM which is not Theme specific
+            </summary>
+            <returns>The non-game specific info from the EGM</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.GetScreenImage">
+            <summary>
+            Downloads a picture of the screen from the EGM
+            </summary>
+            <returns>an image of the game screen(s) that are currently active</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.GetState">
+            <summary>
+            Gets the current state of the EGM
+            </summary>
+            <returns>The state and relevant state related information as an XML document</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.GetTilts">
+            <summary>
+            Gets the list of currently active tilts from the game
+            </summary>
+            <returns>A list of tilts currently active on teh game</returns>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.Stream">
+            <summary>
+            The stream from the communication object used to communicate with the EGM
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.CommunicationsObject">
+            <summary>
+            The communication object (either TCPClient or SerialPort used to connect to the EGM
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IGridSymbol">
+            <summary>
+            This interface defines the properties for a cell in teh <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IGrid">display grid</see>
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IPoint">
+            <summary>
+            This interface defines the objects that composed a decimal point.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IDataDefinition">
+            <summary>
+            This interface defines the information about an object.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IDataDefinition.Name">
+            <summary>
+            The Name of Data object.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IDataDefinition.UID">
+            <summary>
+            The UID of Data object.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IDataDefinition.CRC">
+            <summary>
+            The CRC unique string of the Data Object.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IPoint.ColumnIndex">
+            <summary>
+            The X coordinate of the cell in the grid.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IPoint.RowIndex">
+            <summary>
+            The Y coordinate of the cell in the grid.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IPoint.LayerIndex">
+            <summary>
+            The Layer index of the cell. Generally 0.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IReelSymbol">
+            <summary>
+            This interface contains the members that define the symbols that appear in a reel strip and pay table combination 
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelSymbol.Multiplier">
+            <summary>
+            The default multiplier of the symbol.  The default value should be 1.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelSymbol.IsWild">
+            <summary>
+            Determines if the symbol is a wild symbol.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelSymbol.IsScatter">
+            <summary>
+            Determines if the symbol is a scatter symbol.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelSymbol.SubstitutionSymbols">
+            <summary>
+            If the symbol is wild, the symbols that it substitutes for.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IWinComboTriggerAward">
+            <summary>
+            This interface defines the objects that provide the information about the trigger bonus feature.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboTriggerAward.TriggerAwardName">
+            <summary>
+            The name of the current feature.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboTriggerAward.TriggerAwardType">
+            <summary>
+            The type of the feature e.g FreeGames, Wheels.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboTriggerAward.CanFeatureRettrigger">
+            <summary>
+            Whether the feature can re-trigger itself. Free Spins bonus features can retrigger.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboTriggerAward.NumFeaturePlays">
+            <summary>
+            How many plays are within the feature. Most features have at least one play.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboTriggerAward.MaxTotalFeaturePlays">
+            <summary>
+            Maximum achievable plays within the triggered feature (re-triggers included).
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboTriggerAward.MaxFeatureReTriggers">
+            <summary>
+            Total number of re-triggers
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboTriggerAward.FeatureMultiplier">
+            <summary>
+            Some feature may add additional multiplier.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.ISymbol">
+            <summary>
+            This interface defines the objects for the Symbol Information.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISymbol.Text">
+            <summary>
+            The symbol text value.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISymbol.Index">
+            <summary>
+            The actual symbol index.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IReelStop">
+            <summary>
+            This interface defines the objects for the reel stop information.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelStop.Symbol">
+            <summary>
+            The symbol text for the stop.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelStop.StopIndex">
+            <summary>
+            The index of the stop on the reel.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelStop.VirtualStops">
+            <summary>
+            The list of virtual stops for this stop. Generally this is value is the same as the stop index.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelStop.ContainsVirualStops">
+            <summary>
+            Generally false when there is a single vitual stop - same as stop index. Otherwise it is true.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IGrid">
+            <summary>
+            This interface contains members that define the grid that displays on the EGM
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IGrid.Refresh(System.Collections.Generic.List{System.Int32},IGT.PA.Framework.EgmClients.Interfaces.IGameVariation)">
+            <summary>
+            This method redraws the grid based on the symbols passed in and the game configuration information
+            </summary>
+            <param name="reelStops">The reel stops that appear on the ordinal row</param>
+            <param name="gameInfo">The <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation">game information</see> that contains the <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IPaytable">Pay Table</see>, <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IReelStrip">Reel Strip</see>, and valid <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IPayLine">Pay Lines</see></param>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IGrid.Cells">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IGridSymbol"/>s in the grid
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IGrid.Columns">
+            <summary>
+            The number of columns in the grid
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IGrid.Rows">
+            <summary>
+            The number of rows in the grid
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IGrid.Layers">
+            <summary>
+            Number of layers, generally this will be 1.
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IGrid.GridRefreshed">
+            <summary>
+            This event fires after the grid has been refreshed
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.GameOutcomeEventArgs">
+            <summary>
+            Game outcome EventArgs, used to get information when a game is completed.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.SectionGenerator.NativeParser">
+            <summary>
+            This function extracts generic or native sections from a DataSection object.
+            Author: Stanley Calixte.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.SectionGenerator.NativeParser.UpdatePaytableFilename(System.String)">
+            <summary>
+            This method sets the field "paytableFilecontent" is the paytable filecontent to parse
+            and returns true or false whether this file content exists.
+            </summary>
+            <param name="filecontent">The .paytable file content to parse</param>
+            <returns>True if the file content exist and the field "paytableFilecontent" is now to set filename</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.SectionGenerator.NativeParser.ParsePaytableContent(System.String)">
+             <summary>
+            
+             </summary>
+             <param name="paytable"></param>
+             <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.SectionGenerator.NativeParser.ParsePaytableContent">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.SectionGenerator.NativeParser.ParseSection(IGT.PA.Framework.EgmClients.SectionGenerator.DataSection,System.IO.StringReader)">
+             <summary>
+            
+             </summary>
+             <param name="rootSection"></param>
+             <param name="reader"></param>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.ISlotInformation">
+            <summary>
+            This interface defines the objects for the Slot Information data.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISlotInformation.PlayMaxLines">
+            <summary>
+            Indicates whether the option to play max lines exist.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISlotInformation.WinOnColdStart">
+            <summary>
+            Indicates where the default screen on cold start contains a winning combination,
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IPaytable">
+            <summary>
+            This interface defines the members of a Paytable
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.GetBasePaytable(System.String)">
+            <summary>
+            This function parses out and obtains the base paytable information from the paytable file.
+            </summary>
+            <param name="paytableFilecontent">Paytable file content.</param>
+            <returns>An IPaytable object</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.GetPaytableHeader(System.String)">
+            <summary>
+            This returns the header information set about the paytable file.
+            </summary>
+            <param name="paytableFilecontent">Paytable file content</param>
+            <returns>An IPaytableHeader object</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.GetPaytableInformation(System.String)">
+            <summary>
+            This returns the overall information set about the paytable file.
+            </summary>
+            <param name="paytableFilecontent">Paytable file content.</param>
+            <returns>An IPaytable object</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.GetPaytable(System.String)">
+            <summary>
+            This returns all the IPaytable objects within the file paytableFilename.
+            These objects all slot IPaytable Information. All other types are ommitted.
+            </summary>
+            <param name="paytableFilecontent">Paytable file content.</param>
+            <returns>Base and Spins Bonus games that are IPaytable instances.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.GetPaytableHeaderContent">
+            <summary>
+            This method returns the header information contained in all paytable files.
+            </summary>
+            <returns>IPaytableHeader object.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.GetPaytableInformationContent">
+            <summary>
+            This method returns the Information and configuration data from the Paytable file
+            </summary>
+            <returns>IPaytable object.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.GetOptionPaytableInformation(IGT.PA.Framework.EgmClients.Interfaces.IPaytable)">
+            <summary>
+            The method below retrieves optional information from the paytable file.
+            The method updates the current paytable information as a parameter.
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.GetPaytableContent">
+            <summary>
+            This method returns the default paytable data.
+            </summary>
+            <returns>IPaytable object.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.GetPaytableContent(IGT.PA.Framework.EgmClients.SectionGenerator.DataSection,IGT.PA.Framework.EgmClients.Interfaces.IPaytable,System.Boolean)">
+            <summary>
+            This methdod returns the default paytable data.
+            </summary>
+            <param name="paytableSection">DataSection with paytable data</param>
+            <param name="paytableInfo">information about paytable </param>
+            <param name="isABaseGame">Optional parameter that indicates whether the information is a base or bonus game.Default is true.</param>
+            <returns>an IPaytable object.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.CreateReelStrips">
+            <summary>
+            This method create the reel strips
+            </summary>
+            <returns>true on success</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.CreateGridLayout">
+            <summary>
+            This method returns the default paytable data.
+            </summary>
+            <returns>true on success</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.GetPaytableData">
+            <summary>
+            This method get the paytable data.
+            </summary>
+            <returns>paytable data</returns>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.PaybackPercentage">
+            <summary>
+            The theoretical pay back percentage for this variation of the <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.ITheme">Theme</see>
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.Reels">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IReel">Reels</see> in the Pay Table
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.ReelStrips">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IReelStrip"/>s in the variation of the <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.ITheme">Theme</see>
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.OrdinalRow">
+            <summary>
+            The row of the grid that reel stops are set from.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.Crc">
+            <summary>
+            Paytable CRC32
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.PaytableName">
+            <summary>
+            The name of the Paytable. Default value is "".
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.Percentage">
+            <summary>
+            The Paytable payback percentage. Default value is 100.00%.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.CreditDivisor">
+            <summary>
+            The credit divisor of the paytable. Default value is 1.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.PaytableTypeString">
+            <summary>
+            The Paytable type string indicates the type paylines are used e.g. ML for Multiline.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.NumberOfReels">
+            <summary>
+            The Number of Reels utilized for the Paytable
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.PaylineSetID">
+            <summary>
+            The ID for the paylines.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.PaytableID">
+            <summary>
+            The Paytable ID, which allows identification with other paytables.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.MultiwaySet">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IMultiway">Multiway set</see> in the Pay Table
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.PatternSet">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IPatternLayout">Pattern layout</see> in the Pay Table
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.ReelSymbol">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IReelSymbol">Reel symbol</see> in the Pay Table
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.RegularSymbols">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.ISymbol">Regular symbol</see> in the Pay Table
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.SubstitutionSymbols">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.ISymbolSubstitution">Symbol substitute</see> in the Pay Table
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.Paylines">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IPayLine">Payline</see> in the Pay Table
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.LayoutGrid">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IGridLayout">Grid layout</see> in the Pay Table
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.StandardInformation">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.ISlotInformation">Standard slot information</see> in the Pay Table
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPaytable.WinCategory">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IWinComboCategory">Win combination category</see> in the Pay Table
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IPayLine">
+            <summary>
+            This interface defines the geography of a valid payline in a game
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:IGT.PA.Framework.EgmClients.Interfaces.IPayLine.CreateRegularCoordinate(IGT.PA.Framework.EgmClients.Interfaces.IGridLayout)" -->
+        <!-- Badly formed XML comment ignored for member "M:IGT.PA.Framework.EgmClients.Interfaces.IPayLine.CreatePaytableCoordinate(IGT.PA.Framework.EgmClients.Interfaces.IGridLayout)" -->
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPayLine.PaylineIndex">
+            <summary>
+            The unique payline index of the Payline.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.Interfaces.IPayLine.CellsPoint" -->
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.Interfaces.IPayLine.PaytableCellsPoint" -->
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.SwitchEventArgs">
+            <summary>
+            Event information for Switch actions
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.SwitchEventArgs.#ctor(IGT.PA.Framework.EgmClients.Interfaces.Enumerations.SwitchType,System.Boolean)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="type">Switch</param>
+            <param name="active">Switch State</param>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.SwitchEventArgs.SwitchType">
+            <summary>
+            Switch involved in the event.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.SwitchEventArgs.IsActive">
+            <summary>
+            Determine if the switch is active or engaged. 
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.SectionGenerator.DataSection">
+            <summary>
+            This class reads through a Paytable file, and converts the contents into data sections.
+            Author: Stanley Calixte.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IButton">
+            <summary>
+            This interface contains members that define button components on the EGM
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IButton.Press">
+            <summary>
+            This method presses the button down and releases it
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IButton.PressAndHold">
+            <summary>
+            This method presses the button down and keeps it in the down position until it is released
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IButton.Release">
+            <summary>
+            This method releases the button if it is currently being held down
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IButton.KeyValue">
+            <summary>
+            The underlying value of the button
+            </summary>
+            <example>if the key said "9 lines", this property would be 9, if the button says 5 credits, th value would be 5</example>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IButton.IsDown">
+            <summary>
+            Determines if the button key is currently pressed
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IButton.ButtonDown">
+            <summary>
+            This event fires when the button is pressed down
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IButton.ButtonUp">
+            <summary>
+            This event fires when the button is released
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IButton.ButtonPress">
+            <summary>
+            This event fires when a button press occurs
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.MoneyOutEventArgs">
+            <summary>
+            Contains information about a monetary transaction away form the EGM that has occured.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.MoneyEventArgs">
+            <summary>
+            Contains information about a monetary transaction that has occured.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.BillValidatorError">
+            <summary>
+            AVP Bill Validator errors that can be reported.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.PrinterError">
+            <summary>
+            AVP Printer errors that can be reported.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.HopperError">
+            <summary>
+            AVP Hopper errors that can be reported.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.HopperStatus">
+            <summary>
+            AVP Hopper status that can be reported.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.CoinAcceptorError">
+            <summary>
+            AVP coin Acceptor.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.DoorState">
+            <summary>
+            Current state of a specific <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.DoorType"/>
+            </summary>
+        </member>
+        <member name="F:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.DoorState.Open">
+            <summary>
+            The Door is Open
+            </summary>
+        </member>
+        <member name="F:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.DoorState.Closed">
+            <summary>
+            The Door is Closed
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.PerformanceCounterEventArgs.#ctor">
+            <summary>
+            default constructor. Initalizes the argument list. 
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.PerformanceCounterEventArgs.#ctor(System.Collections.Generic.List{IGT.PA.Framework.EgmClients.Interfaces.PerfmonValues})">
+            <summary>
+            default constructor. Initalizes the argument list. 
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.PerformanceCounterEventArgs.AddValue(IGT.PA.Framework.EgmClients.Interfaces.PerfmonValues)">
+            <summary>
+            Adds a PerfmonValue to the argument list.
+            </summary>
+            <param name="input">The PerfmonValues Sturcture.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.PerformanceCounterEventArgs.Message">
+            <summary>
+            gives a copy of the list to the event handler and deletes the local list.
+            </summary>
+            <returns>list of value structures for parsing. 
+            To prevent from spamming messages I wait till 10 elements have been collected.</returns>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.PerformanceCounterEventArgs.Count">
+            <summary>
+            Number of arguments in the argument list.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.PerfmonValues">
+            <summary>
+            Class containing 3 values that I need to send the information as an event.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.PerfmonValues.CounterInfo">
+            <summary>
+            Comma seperated value consising of the category, counter, and instance where applicable.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.PerfmonValues.Value">
+            <summary>
+            Floating point value of the counter.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.PerfmonValues.TimeStamp">
+            <summary>
+            Timestamp of when the counter was last polled.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IOffsetCoordinate">
+            <summary>
+            This interface defines offset coordinates that are needed during grid and paylines interactions.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IOffsetCoordinate.HorizontalOffset">
+            <summary>
+            Offset Point x.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IOffsetCoordinate.VerticalOffset">
+            <summary>
+            Offset Point y.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation">
+            <summary>
+            This interface contains members that define a bonus game.
+            </summary>
+            <remarks>Requirements are pending for this item</remarks>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation.Enable">
+            <summary>
+            Enables the game for play.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation.Disable">
+            <summary>
+            Disables the game, making it unplayable.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation.SetDenoms(System.Int32[])">
+            <summary>
+            Set the enabled denominations for this game.
+            </summary> /// <remarks>This might affect the enabled denominations of other games.</remarks>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation.Activate(System.Int32)">
+            <summary>
+            Make this IGameVariation the current, active game on the EGM.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation.Paytable">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IPaytable"/>s in the variation of the <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.ITheme">Theme</see>
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation.BonusGames">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IBonusGame"/>s in the variation of the <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.ITheme">Theme</see>
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation.FeatureGames">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IFeatureGame"/>s in the variation of the <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.ITheme"/>
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation.IsEnabled">
+            <summary>
+            Returns true if the game is enabled and able to be played.
+            Note: This is different than being the active game.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation.EnabledDenominations">
+            <summary>
+            List of denominations available to the player for this IGameVariation.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation.Denominations">
+            <summary>
+            List of denominations available for this IGameVariation.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation.ActiveDenomination">
+            <summary>
+            Selected player Denomination, only valid if this game is Active.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation.SupportsDoubleUp">
+            <summary>
+            True if this IGameVariation supports Double Up.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation.DoubleUpEnabled">
+            <summary>
+            True if this IGameVariation has Double Up enabled.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IFeatureGame">
+            <summary>
+            This interface contains members that define a feature game.
+            </summary>
+            <remarks>Requirements are pending for this item</remarks>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IEgm">
+            <summary>
+            This defines the managed EGM interface. The managed EGM processes data received from the <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi"/> and provides a programatic model for automated testing.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IDevice">
+            <summary>
+            This interface contains the members that define a basic gaming device
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IDevice.ManufacturerSerialNumber">
+            <summary>
+            The manufacturer's serial number
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IDevice.AssetTag">
+            <summary>
+            The asset tag of the device
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IDevice.PowerSwitch">
+            <summary>
+            The <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.ISwitch"/> object that controls the power switch to the device
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.Connect">
+            <summary>
+            Connects to the EGM 
+            </summary>
+            <returns>true if connected, false if connection error</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.Disconnect">
+            <summary>
+            Disconnects from the Egm
+            </summary>
+            <returns>true if connection is properly disconnected, false if connection errors occurred</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.GetMetersByPattern(System.String)">
+            <summary>
+            GetBank a list of meters which match the glob style pattern.
+            Example: "*win*" will match all meters with win in the name.
+            </summary>
+            <param name="wildcard">pattern to match</param>
+            <returns>list of meters matching pattern</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.GetMeterByName(System.String)">
+            <summary>
+            Returns the first meter matching the specified name
+            </summary>
+            <param name="name">meter name</param>
+            <returns>meter</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.PlayMaxMultiplier(System.Int32)">
+            <summary>
+            Presses the Maximum Multiplier for the game with the selected number of lines
+            </summary>
+            <param name="multiplierButtonId">the button id of the lines button to press</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.PlayMaxLines(System.Int32)">
+            <summary>
+            Presses the Maximum Multiplier for the game with the selected number of lines
+            </summary>
+            <param name="linesButtonId">the button id of the lines button to press</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.IsTestRng">
+            <summary>
+            Determines whether [is test RNG].
+            </summary>
+            <returns>
+              <c>true</c> if [is test RNG]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.GetScreenShotInfo">
+            <summary>
+            Screen information associated with taking a screenshot.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.IsRealRng">
+            <summary>
+            Determines whether [is real RNG].
+            </summary>
+            <returns>
+              <c>true</c> if [is real RNG]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.ClearPeriodMeters">
+            <summary>
+            Clears the period meters.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.IsProtocolInstalled(IGT.PA.Framework.EgmClients.Interfaces.Enumerations.InstalledProtocols)">
+            <summary>
+            Determines whether [is protocol installed] [the specified installed protocol].
+            </summary>
+            <param name="installedProtocol">The installed protocol.</param>
+            <returns>
+              <c>true</c> if [is protocol installed] [the specified installed protocol]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.DisableEventServer(System.Boolean)">
+            <summary>
+            Disables the event server check when connecting to machine without Event Server
+            </summary>
+            <param name="setDisabled">if set to <c>true</c> [set disabled].</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.DisablePadServer(System.Boolean)" -->
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.PadPassThruSendCommand(System.String)">
+            <summary>
+            Pass Through Send Command
+            </summary>
+            <param name="padCommand">The pad command.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.PadPassThruRecieveCommand">
+            <summary>
+            Returns any bytes sent from the Connection
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.RemoveItemFromPadMessages(System.Int32)">
+            <summary>
+            Removes the item from pad messages.
+            </summary>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.RemoveStringFromPadMessages(System.String)">
+            <summary>
+            Removes the string from pad messages.
+            </summary>
+            <param name="item">The item.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.ClosePadConnectionOverride">
+            <summary>
+            Closes the pad connection.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.isPadConnectionActive">
+            <summary>
+            Determines whether [is pad connection active].
+            </summary>
+            <returns>
+              <c>true</c> if [is pad connection active]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.ClearSafeStorage">
+            <summary>
+            Clears the safe storage.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.ShutdownEgm">
+            <summary>
+            Reboots the Instance of EGM.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.PadGetMessages">
+            <summary>
+            Pads the get messages.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.CheckCredits(System.Int64)">
+            <summary>
+            This method checks the current credit meter and automatically adds money to the game if required so that the credit meter doesn't fall below the maximum bet allowed.  If a paramter is passed then the function will add enough money to keep the credit meter above the minimum stated credit level. 
+            </summary>
+            <param name="minCredits">The amount of credits to be kept on the EGM; when set below 0, an amount will be added to the EGM taht will kep it above the maximum bet amount</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.CalcSpinResults(System.Collections.Generic.List{System.Int32},IGT.PA.Framework.EgmClients.Interfaces.IGameVariation)">
+            <summary>
+            This method calculates the spin results independently of EGM feedback and determines the win amounts based on the information provided within the <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation">game</see> information class.
+            </summary>
+            <param name="reelStops">The reels tops used to generate the spin</param>
+            <param name="game">The game information used to calculate the result of the spin</param>
+            <remarks>This function calls <see cref="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.SetSymbolGrid(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{IGT.PA.Framework.EgmClients.Interfaces.IReelStrip})"/>. it also raises the <see cref="E:IGT.PA.Framework.EgmClients.Interfaces.IEgm.CalcSpinComplete"/> event when this method has completed.</remarks>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.SetSymbolGrid(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{IGT.PA.Framework.EgmClients.Interfaces.IReelStrip})">
+            <summary>
+            This function sets the display grid so that win results can be calculated
+            </summary>
+            <param name="reelStops">The reel stops of the ordinal row used to set the grid</param>
+            <param name="reelStrips">The <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IReelStrip"/> used to set the symbols on the grid</param>
+            <remarks> Raises the <see cref="E:IGT.PA.Framework.EgmClients.Interfaces.IEgm.SymbolGridRefreshed"/> event when completed</remarks>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.AddCredits(System.Int64)">
+            <summary>
+            This function adds the desired number of credits to the credit meter (or as close as possible) by calculating the right combination of bills to insert and inserting them
+            </summary>
+            <param name="amount">The amount of credits to add to the EGM</param>
+            <remarks>Denomination must be known</remarks>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IEgm.AddMoney(System.Int64)">
+            <summary>
+            This function adds the desired amount of money to the EGM (or as close as possible) by calculating the right combination of bills to insert and inserting them
+            </summary>
+            <param name="amount">The amount of cash to add to the EGM (amount in cents)</param>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.Meters">
+            <summary>
+            The list of meters on the EGM
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.Doors">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IDoor">doors</see> on the EGM
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.Buttons">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IButton">buttons</see> on the game
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.KeySwitches">
+            <summary>
+            The list of key switches on the EGM
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.CurrentTilts">
+            <summary>
+            The list of the <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.TiltType"> current tilts</see>  on the game
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.PresentationPlatform">
+            <summary>
+            The type of presentation the game uses for playing the game
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.GamePlatform">
+            <summary>
+            The type of operating system the game uses 
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.IsCardEntered">
+            <summary>
+            The state of whether a player card is entered into the EGM
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.Themes">
+            <summary>
+            The list of games that are installed on the EGM
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.ActiveGame">
+            <summary>
+            The currently active game.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.ActiveTheme">
+            <summary>
+            The currently active theme
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.DisplayGrid">
+            <summary>
+            The grid of symbols used to determine the relative positions of symbols and their pay lines.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.SpinHistory">
+            <summary>
+            A list of spins and their results
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.Egm">
+            <summary>
+            The API object used to communicate with the game
+            Do not use this property in new code.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.Api">
+            <summary>
+            The API object used to communicate with the game
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.Sas">
+            <summary>
+            The instance of the SAS API used to communicate with the game
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.G2s">
+            <summary>
+            The instance of the G2S API used to communicate with the game
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.Configure">
+            <summary>
+            This will be the new entry point for the configuration options
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.FastConnectNoConfig">
+            <summary>
+            Gets or sets a value indicating whether [fast connect no config].
+            </summary>
+            <value>
+            	<c>true</c> if [fast connect no config]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEgm.ExtTcpConnect">
+            <summary>
+            Overides TCP Server to use for other purposes on Port 5745].
+            </summary>
+            <value>
+            	<c>true</c> if [Gets or Sets]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IEgm.Connected">
+            <summary>
+            A connection has been established with the EGM.
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IEgm.Disconnected">
+            <summary>
+            The connection with the EGM has been lost.
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IEgm.SymbolGridRefreshed">
+            <summary>
+            This event fires when the symbol grid is refreshed
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IEgm.CalcSpinComplete">
+            <summary>
+            This event fires when the results of the spin have completed
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.Point">
+            <summary>
+            This class implements the IPoint interface.
+            <see cref="T:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IPoint"/>
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.CommonComponents.Point.Equals(System.Object)">
+             <summary>
+            
+             </summary>
+             <param name="obj"></param>
+             <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.CommonComponents.Point.GetHashCode">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.CommonComponents.Point.Name" -->
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.CommonComponents.Point.UID" -->
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.CommonComponents.Point.CRC" -->
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.CommonComponents.Point.ColumnIndex" -->
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.CommonComponents.Point.RowIndex" -->
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.CommonComponents.Point.LayerIndex" -->
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.ActionFailedException">
+            <summary>
+            Exception thrown when a requested action fails to occur.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.ActionFailedException.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.ActionFailedException.#ctor(System.String)">
+            <summary>
+            Message constructor
+            </summary>
+            <param name="message">Error message</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.ActionFailedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Inner-exception Constructor
+            </summary>
+            <param name="message">Error message</param>
+            <param name="innerException">Exception to wrap</param>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.FeatureEventArgs">
+            <summary>
+            Feature EventArgs
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.FeatureEventArgs.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.FeatureEventArgs.#ctor(System.String)">
+            <summary>
+            FeatureEventArgs constructor with name
+            </summary>
+            <param name="name">Name of feature</param>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.FeatureEventArgs.FeatureName">
+            <summary>
+            Name of the feature
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.PaytablePoint">
+            <summary>
+            This class implements the IPaytablePoint interface.
+            <see cref="T:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IPaytablePoint"/>
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IPaytablePoint">
+            <summary>
+            This interface defines the objects that composed a paytable point.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IPaytablePoint.IndexOnReel">
+            <summary>
+            The reel number as a coordinate of the cell in the reel strip.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.CommonComponents.Interface.IPaytablePoint.ReelIndex">
+            <summary>
+            The reel index of the reel within the reel strip
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.CommonComponents.PaytablePoint.#ctor">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.CommonComponents.PaytablePoint.#ctor(System.String)">
+            <summary>
+            Single Parameter constructor.
+            </summary>
+            <param name="coordinationSet"></param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.CommonComponents.PaytablePoint.#ctor(System.Int32,System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="reelIndex"></param>
+             <param name="indexOnReel"></param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.CommonComponents.PaytablePoint.Equals(System.Object)">
+            <summary>
+            This method overrides the Equals method from Object and returns [true or false].
+            </summary>
+            <param name="obj"></param>
+            <returns>True or False</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:IGT.PA.Framework.EgmClients.CommonComponents.PaytablePoint.GetHashCode" -->
+        <member name="M:IGT.PA.Framework.EgmClients.CommonComponents.PaytablePoint.ToString">
+            <summary>
+            The method overrides the ToString method from Object.
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.CommonComponents.PaytablePoint.Name" -->
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.CommonComponents.PaytablePoint.UID" -->
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.CommonComponents.PaytablePoint.CRC" -->
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.CommonComponents.PaytablePoint.IndexOnReel" -->
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.CommonComponents.PaytablePoint.ReelIndex" -->
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.ITheme">
+            <summary>
+            This interface contains all the members that define a Theme.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ITheme.GameVariations">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IGameVariation">variations</see> that the game has.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IPatternLayout">
+            <summary>
+            This interface defines the objects for the Pattern layout.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.TouchScreenEventArgs">
+            <summary>
+            Touch Screen event information
+            See <see cref="E:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.TouchScreenTouched"/>, <see cref="E:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.TouchScreenReleased"/>, 
+                <see cref="E:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.TouchScreenDragged"/>, <see cref="E:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.TouchScreenPressed"/>
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.TouchScreenEventArgs.#ctor(System.Double,System.Double)">
+            <summary>
+            Default constructor for <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.TouchScreenEventArgs"/>
+            </summary>
+            <param name="currentX">X Coordinate</param>
+            <param name="currentY">Y Coordinate</param>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.TouchScreenEventArgs.CurrentX">
+            <summary>
+            Current TouchScreen location, X Coordinate
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.TouchScreenEventArgs.CurrentY">
+            <summary>
+            Current TouchScreen location, Y Coordinate
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IReelStrip">
+            <summary>
+            This interface defines the objects for the win awards in a win category.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IReelStrip.AddReel(System.Int32,System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="reelIndex"></param>
+             <param name="reelSpan"></param>
+             <returns></returns>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelStrip.Symbols">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IReelSymbol">symbols</see> in the reel strip
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelStrip.ReelIndexSet">
+            <summary>
+            The indices of the reels that belong to this reelstrip.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelStrip.ReelSpanSet">
+            <summary>
+            The number of cells that each reel that is found on this reelstrip.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelStrip.ReelSpanSum">
+            <summary>
+            The number of cells that each reel that is found on this reelstrip.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelStrip.ReelStripRange">
+            <summary>
+            The index range of each reel on the reelstrip. e.g. Reel1 spans 5 cells with range [0-4] on reelstrip.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelStrip.ReelStripSpan">
+            <summary>
+            The total cell span of the reelstrip.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReelStrip.ReelStripIndex">
+            <summary>
+            The index of the reelstrip
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.ReelSetRange.IsInRange(System.Int32)">
+            <summary>
+            Base on the value of "value", this returns true or false if the value exists within the range.
+            </summary>
+            <param name="value">the index of the reel</param>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.ReelSetRange.Equals(System.Object)">
+            <summary>
+            The method overrides the Equals method for comparing the ReelSetRange objects
+            </summary>
+            <param name="obj">the object value to compare.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.ReelSetRange.GetHashCode">
+            <summary>
+            The method overrides the GetHashCode method.
+            </summary>
+            <returns>a distinct value for each ReelSetRange object</returns>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ReelSetRange.High">
+            <summary>
+            High is the highest inclusive range of the reel set range.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ReelSetRange.Low">
+            <summary>
+            Low is the lowest inclusive range of the reel set range.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IGridLayout">
+            <summary>
+            This interface defines the objects for the Grid Layout.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IGridLayout.ConvertToPoint(IGT.PA.Framework.EgmClients.CommonComponents.Interface.IPaytablePoint,System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="paytablePoints"></param>
+             <param name="layoutIndex"></param>
+             <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IGridLayout.ConvertToPoint(IGT.PA.Framework.EgmClients.CommonComponents.Interface.IPaytablePoint)">
+             <summary>
+            
+             </summary>
+             <param name="paytablePoints"></param>
+             <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IGridLayout.ConvertToPaytablePoint(IGT.PA.Framework.EgmClients.CommonComponents.Interface.IPoint)">
+             <summary>
+            
+             </summary>
+             <param name="points"></param>
+             <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IGridLayout.UpdateLayout(System.Int32,IGT.PA.Framework.EgmClients.CommonComponents.Interface.IPoint)">
+             <summary>
+            
+             </summary>
+             <param name="layoutIndex"></param>
+             <param name="points"></param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IGridLayout.UpdateAllLayout(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="layoutIndex"></param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IGridLayout.CreateGridContents">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IGridLayout.CreateGridContents(System.Collections.Generic.List{IGT.PA.Framework.EgmClients.Interfaces.IReelStrip})">
+             <summary>
+            
+             </summary>
+             <param name="reelStrips"></param>
+             <returns></returns>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IGridLayout.GridLayoutIndex">
+            <summary>
+            The Grid Index, that may also indicate the layout index for the Grid.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.Interfaces.IGridLayout.PaytablePointSet" -->
+        <!-- Badly formed XML comment ignored for member "P:IGT.PA.Framework.EgmClients.Interfaces.IGridLayout.PointSet" -->
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.DoorEventArgs">
+            <summary>
+            Door EventArgs, used when doors are opened or closed.
+            See <see cref="E:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.DoorOpened"/> or <see cref="E:IGT.PA.Framework.EgmClients.Interfaces.IEgmApi.DoorClosed"/>
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.DoorEventArgs.#ctor(IGT.PA.Framework.EgmClients.Interfaces.Enumerations.DoorType,IGT.PA.Framework.EgmClients.Interfaces.Enumerations.DoorState)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="type">Door</param>
+            <param name="state">Door State</param>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.DoorEventArgs.DoorType">
+            <summary>
+            Type of door action is performed on
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.DoorEventArgs.DoorState">
+            <summary>
+            State of door
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.CurrentContextAvpEGM">
+            <summary>
+            Context Codes for Each Menu Page
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IConfigure.Protocol``1">
+            <summary>
+            The instance of the Config which controls Protocol Configurations
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IConfigure.ProtocolControl">
+            <summary>
+            The instance of the Config which controls Protocol Money Control
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IConfigure.SiteID">
+            <summary>
+            The instance of the Side ID settings
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IConfigure.CertManagement">
+            The instance of the Config which controls Certificate Management
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IConfigure.Network">
+            <summary>
+            The instance of the Network Config
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IConfigure.Machine">
+            <summary>
+            The instance of the Machine Setup configuration options.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IConfigure.Attract">
+            <summary>
+            The instance of the Attract Setup configuration options.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IConfigure.CashHandling">
+            <summary>
+            The instance of the Cash Handling Setup configuration options.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IConfigure.Game">
+            <summary>
+            The instance of the Game Setup configuration options.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IConfigure.MainMenu">
+            <summary>
+            The instance of the Main Menu Setup configuration options.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IConfigure.Clock">
+            <summary>
+            The instance of the System Clock for the EGM
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IConfigure.MediaDisplay">
+            <summary>
+            The instance of the Media Display Setup configuration options.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IWinComboCategory">
+            <summary>
+            This interface defines the objects that provide a win combination category.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboCategory.WinCategoryIndex">
+            <summary>
+            Win catogory index
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboCategory.WinLayoutSet">
+            <summary>
+            Win layout set
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboCategory.WinAwardSet">
+            <summary>
+            Win award set
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboCategory.WinProgressiveAward">
+            <summary>
+            Win Progressive award
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboCategory.HasProgressiveFeature">
+            <summary>
+            Whether the feature is progressive.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.ISymbolSubstitution">
+            <summary>
+            This interface defines the objects for the Symbol information.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISymbolSubstitution.InclusionSymbols">
+            <summary>
+            Inclusion symbol.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISymbolSubstitution.ExclusionSymbols">
+            <summary>
+            Exclusion symbols.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISymbolSubstitution.IsInclusion">
+            <summary>
+            Check for inclusion.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory">
+            <summary>
+            This interface contains all the members that define spin resolution history
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.ReelStops">
+            <summary>
+            The collection of reel stop values of teh ordinal row used to generate the <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IGrid">display grid</see>
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.LinesPlayed">
+            <summary>
+            The number of lines played in the spin
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.CreditMultiplierPlayed">
+            <summary>
+            The credit multiplier selecte dfor teh spin
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.BonusCreditsPlayed">
+            <summary>
+            The anount of BonusCredits played
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.Time">
+            <summary>
+            The time the history entry took place.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.TotalBet">
+            <summary>
+            The total number of credits bet
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.Denomination">
+            <summary>
+            Player denomination this game was played at
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.InitalCredits">
+            <summary>
+            Initial Credit Meter value
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.FinalCredits">
+            <summary>
+            Final Credit Meter value
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.TotalWin">
+            <summary>
+            Win Amount
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.PaidMeter">
+            <summary>
+            Paid Meter
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.MoneyIn">
+            <summary>
+            Money In Meter
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.MoneyOut">
+            <summary>
+            Money Out Meter
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.IsBonusEligible">
+            <summary>
+            Is the spin eligible for a bonus
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.FeatureHistory">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory">spins</see> generated in the free games or subsequent spins from the base game
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.Events">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IEventHistory">events</see> that occured during the spin
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.WinLines">
+            <summary>
+            The list of valid <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IWinLine">win lines</see> for the spins generated from teh reel stops
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISpinHistory.GameVariation">
+            <summary>
+            The Game that this history entry pertains to
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IReel">
+            <summary>
+            This interface defines the objects for the Reels.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReel.ReelIndex">
+            <summary>
+            The index of the reel.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReel.ReelStripIndex">
+            <summary>
+            The index of the reel strip where this reel resides.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReel.PhysicalStops">
+            <summary>
+            The number of stops that the reel contains.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReel.CellsSpan">
+            <summary>
+            The number of cells that compose this reel
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReel.ReelOffset">
+            <summary>
+            The Cell offset of the reel. All Rng starts at the Cell index = reelOffset.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReel.StartReelIndex">
+            <summary>
+            Start position of the reel on cold boot.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IReel.ReelStops">
+            <summary>
+            The list of <see cref="!:IReelStopContent">reel stops</see> that comprise the reel.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPerformance.AddPerfCounter(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Adds a performance counter for monitoring
+            </summary>
+            <param name="categoryName">Performance counter category name</param>
+            <param name="counterName">Performance counter name</param>
+            <param name="instanceName">Instance name, null or empty if none</param>
+            <returns>True if successfully added, false if it fails. Check the category and counter names and if it fails. They may not be supported on the egm</returns>
+            <remarks>Works only for AVP 2.0 +</remarks>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPerformance.StartPerfCounterCapturing">
+            <summary>
+            Start capturing the performance counter data that is added to the list
+            </summary>
+            <returns>True if successfully started else false. False indicates that there are no counters or the service is already running</returns>
+            <remarks>Works only for AVP 2.0 +</remarks>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPerformance.StopPerfCounterCapturing">
+            <summary>
+            Stop capturing the data
+            </summary>
+            <remarks>Works only for AVP 2.0 +</remarks>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPerformance.ClearPerfCounterList">
+            <summary>
+            Clear the previously added performance counters and data. Stop capturing before calling this method
+            </summary>
+            <returns>true if successful, false if it currently capturing.</returns>
+            <remarks>Works only for AVP 2.0 +</remarks>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPerformance.RemovePerfCounter(System.Int32)">
+            <summary>
+            Removes a counter by index
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPerformance.GetPerfCounterCategories">
+            <summary>
+            Gets the categories from Perfmon.
+            </summary>
+            <returns>list of categories</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPerformance.GetPerfCounters(System.String)">
+            <summary>
+            Gets a list of performance counters based on the category selected
+            </summary>
+            <param name="categoryString">Name of the category selected</param>
+            <returns>list of counters associated with the category</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IPerformance.GetPerfCounterInstance(System.String)">
+            <summary>
+            Gets a list of instances based on the category selected if no instances available will leave the list blank
+            </summary>
+            <param name="categoryString">Name of the category selected</param>
+            <returns>List of Instance names associated with the selected category.</returns>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPerformance.IsCapturingPerfCounters">
+            <summary>
+            Finds if it the process is currently capturing performance counters
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IPerformance.EventReceived">
+            <summary>
+            Fires when performance data is received
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.CountryCode">
+            <summary>
+            Country codes used for currency
+            </summary>
+        </member>
+        <member name="F:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.CountryCode.UnitedStates">
+            <summary>
+            United States of America
+            </summary>
+        </member>
+        <member name="F:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.CountryCode.Euro">
+            <summary>
+            Euro currency
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IPayCombination">
+            <summary>
+            This interface defines a valid pay combination in the <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IPaytable">Pay Table</see>
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPayCombination.Symbols">
+            <summary>
+            The list of <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IReelSymbol">symbols</see> in the pay combination
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPayCombination.PayAmount">
+            <summary>
+            The amount of credits the combination pays
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPayCombination.Multiplier">
+            <summary>
+            The multiplier that the pay combination generates
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IPayCombination.IsScatterPay">
+            <summary>
+            If true the combination is a scatter pay, else it is a line pay
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.VersionException.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.VersionException.#ctor(System.String)">
+            <summary>
+            Message constructor
+            </summary>
+            <param name="message">Error message</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.VersionException.#ctor(System.String,System.Exception)">
+            <summary>
+            Innerexception Constructor
+            </summary>
+            <param name="message">Error message</param>
+            <param name="innerException">Exception to wrap</param>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.GameState">
+            <summary>
+            Generic states of an EGM
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.SectionGenerator.SectionType">
+            <summary>
+            A section may be of type Root, Secondary, or Unknownn
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IWinLine">
+            <summary>
+            This interface contains the members that define a winning line generated from a spin
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinLine.PayLine">
+            <summary>
+            The <see cref="T:IGT.PA.Framework.EgmClients.Interfaces.IPayLine">pay line</see> that generated the win amount
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinLine.PayCombinations">
+            <summary>
+            The list of pay combinations that the win liine generated
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinLine.IsScatterWin">
+            <summary>
+            Determines if teh win is a scatter win
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinLine.ScatterPayAmount">
+            <summary>
+            The amount of the scatter pay wins
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinLine.IsLineWin">
+            <summary>
+            Determines if the win is a line win
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinLine.LineWinAmount">
+            <summary>
+            The amount of the line win amounts
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinLine.IsFeatureWin">
+            <summary>
+            determines if the win is generated from a feature win
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinLine.Muliplier">
+            <summary>
+            The multiplier for the pays
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.ISwitch">
+            <summary>
+            This interface contains the member that define a component switch on an EGM
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.ISwitch.TurnOn">
+            <summary>
+            Puts the switch in the ON position if it is not currently ON
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.ISwitch.TurnOff">
+            <summary>
+            Puts the switch in the OFF position if it is not currently OFF
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.ISwitch.Toggle">
+            <summary>
+            Changes the current state of teh switch to the opposite state.  If switch is on, it turns it off, and vice versa
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.ISwitch.Cycle">
+            <summary>
+            Cycles the switch to its opposite state and then back to its original state
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ISwitch.IsOn">
+            <summary>
+            The current state of the switch, when true the switch is in the ON position
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.ISwitch.SwitchOn">
+            <summary>
+            This event fires when the state of the IsOn property changes to true
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.ISwitch.SwitchOff">
+            <summary>
+            This event fires when the state of the IsOn property changes to false
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.ISwitch.SwitchToggled">
+            <summary>
+            This event fires when the state of the IsOn property changes 
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.ISwitch.SwitchCycled">
+            <summary>
+            This event fires after the Cycle method is called
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IErrorWindow.GetAllMessages">
+            <summary>
+            Returns all text messages displayed on the screen
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IErrorWindow.GetFooterMessage">
+            <summary>
+            Returns the message displayed on the lower box of the Error window
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IErrorWindow.IsDisplayed">
+            <summary>
+            Returns true if the red or green screen is currently displayed on the EGM.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IDoor">
+            <summary>
+            This interface contains members that define to a door component on an EGM
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IDoor.Open">
+            <summary>
+            Opens the door if closed
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IDoor.Close">
+            <summary>
+            Closes the door if open
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IDoor.IsOpen">
+            <summary>
+            The current state of the door
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IDoor.DoorType">
+            <summary>
+            The <see cref="P:IGT.PA.Framework.EgmClients.Interfaces.IDoor.DoorType"/> of the door
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IDoor.DoorOpen">
+            <summary>
+            Fires when the <see cref="P:IGT.PA.Framework.EgmClients.Interfaces.IDoor.IsOpen"/> property is changed to true
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IDoor.DoorClose">
+            <summary>
+            Fires when the <see cref="P:IGT.PA.Framework.EgmClients.Interfaces.IDoor.IsOpen"/> property is changed to false
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.PresentationPlatform">
+            <summary>
+            Type of presentation in use
+            </summary>
+        </member>
+        <member name="F:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.PresentationPlatform.Video">
+            <summary>
+            Standard video display slot machine
+            </summary>
+        </member>
+        <member name="F:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.PresentationPlatform.Stepper">
+            <summary>
+            Stepper presentation includes physical reels
+            </summary>
+        </member>
+        <member name="F:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.PresentationPlatform.MLD">
+            <summary>
+            Utilizes an MLD display
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IMeter">
+            <summary>
+            This class contains all the members used to define a meter
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IMeter.ResetMeter">
+            <summary>
+            This sets the meter back to zero
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.IMeter.IncrementMeter(System.Int64)">
+            <summary>
+            This increments (or decrements) the meter by the indicated amount
+            </summary>
+            <param name="incrementAmount">The amount to increment (or decrement, if negative) the meter by</param>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IMeter.MeterValue">
+            <summary>
+            The value of the meter based on the data contained in the tri-partite sub meters
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IMeter.SubMeters">
+            <summary>
+            The list of submeters for the actual meter
+            </summary>
+            <remarks>Submeters are used to give an accurate representation of the meter.  If all sub meter values agree then this value is what is reported as the meter value.  If two submeters agree and the third does not then the majority value is reported.  If all meters disagree then the meter is corrupt.</remarks>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IMeter.MeterReset">
+            <summary>
+            This event fires when the ResetMeter function is called
+            </summary>
+        </member>
+        <member name="E:IGT.PA.Framework.EgmClients.Interfaces.IMeter.MeterChanged">
+            <summary>
+            This event fires when incrementing a meter value has changed
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.DisconnectedException">
+            <summary>
+            Used when a connection is dropped, or access is attempted when there is no valid connection.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.DisconnectedException.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.DisconnectedException.#ctor(System.String)">
+            <summary>
+            Message constructor
+            </summary>
+            <param name="message">Error message</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.DisconnectedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Innerexception Constructor
+            </summary>
+            <param name="message">Error message</param>
+            <param name="innerException">Exception to wrap</param>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.MoneyInEventArgs">
+            <summary>
+            Contains information about a monetary transaction to the EGM that has occured.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IWinComboLayout">
+            <summary>
+            This interface defines the objects that provide the information about the symbols layout in win category.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboLayout.WinComboLayoutIndex">
+            <summary>
+            Win combination layout index
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboLayout.WinComboLayoutSymbolSet">
+            <summary>
+            Win combination layout symbol set
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboLayout.NumberOfWinComboLayoutSymbols">
+            <summary>
+            Number if Win combination layout symbols
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboLayout.WinComboLayoutDirection">
+            <summary>
+            Number of win combination layout symbols
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboLayout.WinComboLayoutType">
+            <summary>
+            Win combination layout direction
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboLayout.LineAffected">
+            <summary>
+            Win combination layout type
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboLayout.LineAffectedIndex">
+            <summary>
+            The Payline index affected by the win. Generally -1, which means all lines are affected by the win.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboLayout.PatternIndex">
+            <summary>
+            The Pattern index of the combination.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.TiltEventArgs">
+            <summary>
+            Tilt Event Information
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.TiltEventArgs.#ctor(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="descr">Description of tilt</param>
+            <param name="hardTilt">true if hard tilt</param>
+            <param name="cleared">true if event has been cleared</param>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.TiltEventArgs.Description">
+            <summary>
+            Description of Tilt
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.TiltEventArgs.HardTilt">
+            <summary>
+            True if this is a hard tilt
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.TiltEventArgs.Cleared">
+            <summary>
+            True if the tilt has been cleared, false if tilt is present.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.SectionGenerator.DataSectionParser">
+            <summary>
+            This functions extracts specific sections from a DataSection objects.
+            Author: Stanley Calixte.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.SectionGenerator.DataSectionParser.GetPaytableInformationSection(System.Collections.Generic.List{IGT.PA.Framework.EgmClients.SectionGenerator.DataSection})">
+            <summary>
+            The medthod below extracts the paytable header section from the paytable file.
+            </summary>
+            <param name="sections">Sections to seek paytable header section</param>
+            <returns>paytable header section</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.SectionGenerator.DataSectionParser.GetBaseSection(System.Collections.Generic.List{IGT.PA.Framework.EgmClients.SectionGenerator.DataSection})">
+            <summary>
+            The method seeks out the base game section from paytable file.
+            </summary>
+            <param name="sections">Sections to seek paytable header section</param>
+            <returns>base game section</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.SectionGenerator.DataSectionParser.GetBonusSections(System.Collections.Generic.List{IGT.PA.Framework.EgmClients.SectionGenerator.DataSection})">
+            <summary>
+            The method seeks all bonus sections from paytable
+            </summary>
+            <param name="sections">Sections to seek paytable header section</param>
+            <returns>Bonus games sections</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.SectionGenerator.DataSectionParser.GetSection(System.Collections.Generic.List{IGT.PA.Framework.EgmClients.SectionGenerator.DataSection},System.String)">
+            <summary>
+            The method gets specific sections from the paytable file given the root section name.
+            </summary>
+            <param name="sections">Sections to seek paytable header section</param>
+            <param name="sectionName">The root section</param>
+            <returns></returns>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IWinComboAward">
+            <summary>
+            This interface defines the objects for the win awards in a win category.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboAward.WinComboAwardIndex">
+            <summary>
+            The Index of the award. Default is always zero (0).
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboAward.WinAwardNoMultiplier">
+            <summary>
+            Win award that is not subject to any multiplier.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboAward.WinAwardWithMultiplier">
+            <summary>
+            Win award that is always subject to a multiplier.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboAward.TotalWinAward">
+            <summary>
+            Depending on the award and the bet TotalWinAward is the true win award.
+            TotalWinAward = WinAwardNoMultiplier + (WinAwardWithMultiplier * WinAwardMultiplier) * Bet per line affected.
+            TotalWinAward = WinAwardNoMultiplier + (WinAwardWithMultiplier * WinAwardMultiplier) * Bet per way affected.
+            TotalWinAward = WinAwardNoMultiplier + (WinAwardWithMultiplier * WinAwardMultiplier) * TotalBet for scatter win.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboAward.WinAwardMultiplier">
+            <summary>
+            Multiplier for the win awards - Default is one (1).
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboAward.BetType">
+            <summary>
+            {ALL, MAX, Specific} are the three options.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboAward.WinAwardBetCoins">
+            <summary>
+            The list of possible Bet Coins
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboAward.WinAwardSubBet">
+            <summary>
+            Unknown thus far.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboAward.WinAwardMaxBet">
+            <summary>
+            Max Bet Coins to use for the award.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboAward.WinAwardFeatureTrigger">
+            <summary>
+            Most awards do not trigger a feature.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IMultiway">
+            <summary>
+            This interface defines the objects for the Multiway layout.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IMultiway.MultiwayIndex">
+            <summary>
+            The Multiway Index of the multiway set.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IMultiway.MultiwayCapacity">
+            <summary>
+            The Multiway capacity of the multiway set.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IMultiway.MultiwayBet">
+            <summary>
+            The Multiway bet for the multiway set.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IMultiway.MultiwayBetType">
+            <summary>
+            The Multiway bet type for the multiway set.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IMultiway.MultiwayOutcomes">
+            <summary>
+            List of <see cref="!:IPlayLine"/> playlines.
+            Each outcome of a multiway is similar to a <see cref="!:IPlayLine"/>playline outcome.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IBonusGame">
+            <summary>
+            This interface contains members that define a bonus game.
+            </summary>
+            <remarks>Requirements are pending for this item</remarks>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.ButtonEventArgs">
+            <summary>
+            Button EventArgs, used when a button is pressed or released.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Interfaces.ButtonEventArgs.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="buttonIndex">index of button</param>
+            <param name="buttonDown">is button down</param>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ButtonEventArgs.ButtonIndex">
+            <summary>
+            Index of button action performed on
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.ButtonEventArgs.ButtonDown">
+            <summary>
+            Current state of button
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.DoorType">
+            <summary>
+            Types of EGM Doors.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IWinComboProgressiveAward">
+            <summary>
+            This interface defines the objects that provide the information about the progressive bonus feature.
+            Author: Stanley Calixte
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboProgressiveAward.ProgressiveLevel">
+            <summary>
+            Progressive level
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboProgressiveAward.ProgressiveBetAmount">
+            <summary>
+            Progressive bet amount
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboProgressiveAward.ProgressiveWinAmount">
+            <summary>
+            Progressive Win amount
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboProgressiveAward.ProgressiveBetType">
+            <summary>
+            Progressive bet type
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboProgressiveAward.ProgressiveLinesToPlay">
+            <summary>
+            Progresssive line pay
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboProgressiveAward.ProgressiveAwardName">
+            <summary>
+            Name of progressive award
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboProgressiveAward.ProgressiveLinePlayed">
+            <summary>
+            Progressive line played
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IWinComboProgressiveAward.IsWinCombinedWithBase">
+            <summary>
+            Win combined with base.
+            </summary>
+            <returns>True on success</returns>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.IEventHistory">
+            <summary>
+            This interface contains the members used to define the occurence of an event on the EGM
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Interfaces.IEventHistory.EventTime">
+            <summary>
+            The DateTime that the event occured
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Interfaces.Enumerations.MenuLogTypes">
+            <summary>
+            System Log Enumerations
+            </summary>
+        </member>
+    </members>
+</doc>

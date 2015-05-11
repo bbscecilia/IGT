@@ -1,0 +1,80 @@
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\bin\Release\LocalEGM.dll
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\bin\Release\LocalEGM.pdb
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\bin\Release\RemoteSwitch.dll
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\bin\Release\RemoteSwitch.pdb
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\obj\Release\LocalEGM.dll
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\obj\Release\LocalEGM.pdb
+C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\bin\Release\LocalEGM.dll
+C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\bin\Release\LocalEGM.pdb
+C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\bin\Release\RemoteSwitch.dll
+C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\bin\Release\RemoteSwitch.pdb
+C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\obj\Release\ResolveAssemblyReference.cache
+C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\obj\Release\LocalEGM.dll
+C:\Users\escobajd\Documents\Visual Studio 2010\Projects\EGM Framework Project\LocalEGM\obj\Release\LocalEGM.pdb
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Release\LocalEGM.dll
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Avp.dll
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Interfaces.dll
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Sas.dll
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Release\CookComputing.XmlRpcV2.dll
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Release\Ciloci.Flee.dll
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Avp.pdb
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Avp.xml
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Interfaces.pdb
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Interfaces.xml
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Sas.pdb
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Sas.xml
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Release\RemoteSwitch.pdb
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\obj\Release\ResolveAssemblyReference.cache
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\obj\Release\LocalEGM.dll
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\obj\Release\LocalEGM.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\bin\Release\LocalEGM.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Avp.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Interfaces.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Sas.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\bin\Release\CookComputing.XmlRpcV2.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\bin\Release\Ciloci.Flee.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Avp.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Avp.xml
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Interfaces.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Interfaces.xml
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Sas.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Sas.xml
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\bin\Release\RemoteSwitch.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\obj\Release\LocalEGM.csprojResolveAssemblyReference.cache
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\obj\Release\LocalEGM.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\LocalEGM\obj\Release\LocalEGM.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\bin\Release\LocalEGM.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Avp.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Interfaces.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Sas.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\bin\Release\CookComputing.XmlRpcV2.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\bin\Release\Ciloci.Flee.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Avp.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Avp.xml
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Interfaces.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Interfaces.xml
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Sas.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Sas.xml
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\bin\Release\RemoteSwitch.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\obj\Release\LocalEGM.csprojResolveAssemblyReference.cache
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\obj\Release\LocalEGM.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\obj\Release\LocalEGM.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\bin\Release\LocalEGM.pdb
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\obj\Release\LocalEGM.csprojResolveAssemblyReference.cache
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\bin\Release\LocalEGM.dll
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\bin\Release\LocalEGM.pdb
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Avp.dll
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Interfaces.dll
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Sas.dll
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\bin\Release\RemoteSwitch.dll
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\bin\Release\CookComputing.XmlRpcV2.dll
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\bin\Release\Ciloci.Flee.dll
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Avp.pdb
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Avp.xml
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Interfaces.pdb
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Interfaces.xml
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Sas.pdb
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\bin\Release\IGT.PA.Framework.EgmClients.Sas.xml
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\obj\Release\LocalEGM.dll
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\obj\Release\LocalEGM.pdb

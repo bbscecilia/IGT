@@ -1,0 +1,65 @@
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\bin\Debug\LocalEGM.dll
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\bin\Debug\LocalEGM.pdb
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\obj\Debug\LocalEGM.dll
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\obj\Debug\LocalEGM.pdb
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\bin\Debug\RemoteSwitch.dll
+C:\Documents and Settings\descobar\My Documents\Visual Studio 2008\Projects\EGM Framework Project\LocalEGM\bin\Debug\RemoteSwitch.pdb
+C:\Users\manans\Desktop\LocalEGM\LocalEGM\bin\Debug\LocalEGM.dll
+C:\Users\manans\Desktop\LocalEGM\LocalEGM\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\manans\Desktop\LocalEGM\LocalEGM\obj\Debug\LocalEGM.dll
+C:\Users\manans\Desktop\LocalEGM\LocalEGM\obj\Debug\LocalEGM.pdb
+C:\Users\manans\Desktop\LocalEGM\LocalEGM\bin\Debug\LocalEGM.pdb
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Debug\LocalEGM.dll
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Debug\LocalEGM.pdb
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Debug\IGT.PA.Framework.EgmClients.Avp.dll
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Debug\IGT.PA.Framework.EgmClients.Interfaces.dll
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Debug\IGT.PA.Framework.EgmClients.Sas.dll
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Debug\CookComputing.XmlRpcV2.dll
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Debug\Ciloci.Flee.dll
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Debug\IGT.PA.Framework.EgmClients.Avp.pdb
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Debug\IGT.PA.Framework.EgmClients.Avp.xml
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Debug\IGT.PA.Framework.EgmClients.Interfaces.pdb
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Debug\IGT.PA.Framework.EgmClients.Interfaces.xml
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Debug\IGT.PA.Framework.EgmClients.Sas.pdb
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\bin\Debug\IGT.PA.Framework.EgmClients.Sas.xml
+C:\Users\endicot\Desktop\PTPSource\Paytester Plus\libs\LocalEGM.dll
+C:\Users\endicot\Desktop\PTPSource\Paytester Plus\libs\LocalEGM.pdb
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\obj\Debug\LocalEGM.dll
+C:\Users\endicot\Desktop\PTPSource\LocalEGM\LocalEGM\obj\Debug\LocalEGM.pdb
+F:\PTPSource\Paytester Plus\libs\LocalEGM.dll
+F:\PTPSource\Paytester Plus\libs\LocalEGM.pdb
+F:\PTPSource\LocalEGM\LocalEGM\obj\Debug\ResolveAssemblyReference.cache
+F:\PTPSource\LocalEGM\LocalEGM\obj\Debug\LocalEGM.dll
+F:\PTPSource\LocalEGM\LocalEGM\obj\Debug\LocalEGM.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\libs\LocalEGM.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\libs\LocalEGM.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\LocalEGM\LocalEGM\obj\Debug\LocalEGM.csprojResolveAssemblyReference.cache
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\LocalEGM\LocalEGM\obj\Debug\LocalEGM.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\LocalEGM\LocalEGM\obj\Debug\LocalEGM.pdb
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\obj\Debug\LocalEGM.csprojResolveAssemblyReference.cache
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\obj\Debug\LocalEGM.dll
+C:\Users\clarkr\Desktop\Paytester Plus\PTPSource\Paytester Plus\LocalEGM\obj\Debug\LocalEGM.pdb
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\libs\LocalEGM.dll
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\libs\LocalEGM.pdb
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\obj\Debug\LocalEGM.csprojResolveAssemblyReference.cache
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\obj\Debug\LocalEGM.dll
+C:\Users\clarkr\Documents\TFS Projects\Paytester Plus\LocalEGM\obj\Debug\LocalEGM.pdb
+\\PEKCSVR01\China_PA_Work\PA_Virtual_Development_Team\CDS Autoplay Tester\V 1.1\Source Code\Paytester Plus\libs\LocalEGM.dll
+\\PEKCSVR01\China_PA_Work\PA_Virtual_Development_Team\CDS Autoplay Tester\V 1.1\Source Code\Paytester Plus\libs\LocalEGM.pdb
+\\PEKCSVR01\China_PA_Work\PA_Virtual_Development_Team\CDS Autoplay Tester\V 1.1\Source Code\Paytester Plus\LocalEGM\obj\Debug\LocalEGM.dll
+\\PEKCSVR01\China_PA_Work\PA_Virtual_Development_Team\CDS Autoplay Tester\V 1.1\Source Code\Paytester Plus\LocalEGM\obj\Debug\LocalEGM.pdb
+C:\Users\houw\Desktop\RNG V0.3 - Try to send to EGM directly\Paytester Plus\libs\LocalEGM.dll
+C:\Users\houw\Desktop\RNG V0.3 - Try to send to EGM directly\Paytester Plus\libs\LocalEGM.pdb
+C:\Users\houw\Desktop\RNG V0.3 - Try to send to EGM directly\FreeGame generator\LocalEGM\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\houw\Desktop\RNG V0.3 - Try to send to EGM directly\FreeGame generator\LocalEGM\obj\Debug\LocalEGM.dll
+C:\Users\houw\Desktop\RNG V0.3 - Try to send to EGM directly\FreeGame generator\LocalEGM\obj\Debug\LocalEGM.pdb
+C:\Users\houw\Desktop\Paytester Plus\libs\LocalEGM.dll
+C:\Users\houw\Desktop\Paytester Plus\libs\LocalEGM.pdb
+C:\Users\houw\Desktop\RNG Generator V0.2 - Trigger specific feature in Mystery Bonus\LocalEGM\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\houw\Desktop\RNG Generator V0.2 - Trigger specific feature in Mystery Bonus\LocalEGM\obj\Debug\LocalEGM.dll
+C:\Users\houw\Desktop\RNG Generator V0.2 - Trigger specific feature in Mystery Bonus\LocalEGM\obj\Debug\LocalEGM.pdb
+C:\Users\houw\Desktop\12.2\LocalEGM\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\houw\Desktop\12.2\LocalEGM\obj\Debug\LocalEGM.pdb
+C:\Users\houw\Desktop\12.2\LocalEGM\obj\Debug\LocalEGM.dll

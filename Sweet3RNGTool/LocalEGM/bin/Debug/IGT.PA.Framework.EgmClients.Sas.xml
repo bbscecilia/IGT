@@ -1,0 +1,1469 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IGT.PA.Framework.EgmClients.Sas</name>
+    </assembly>
+    <members>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Shutdown">
+            <summary>
+            LongPoll 01, Shutdown.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Startup">
+            <summary>
+            LongPoll 02, Startup.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SoundOff">
+            <summary>
+            LongPoll 03, SoundOff.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SoundOn">
+            <summary>
+            LongPoll 04, SoundOn.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.ReelSpinSoundsDisabled">
+            <summary>
+            LongPoll 05, Disable reel spin sounds.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.EnableBillAcceptor">
+            <summary>
+            LongPoll 06, Enable the bill acceptor.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.DisableBillAcceptor">
+            <summary>
+            LongPoll 07, Disable the bill acceptor.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.ConfigBillDenoms(System.String,System.Boolean)">
+            <summary>
+            LongPoll 08, Sends the LongPoll to configure bill denoms. 
+            </summary>
+            <param name="bitmap">Bill Denomination Bitmap (FFFFFF00)</param>
+            <param name="billAcceptorActionFlag">Bill acceptor flag enabled.</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.EnableGameN(System.Int32,System.Boolean)">
+            <summary>
+            LongPoll 09, Enable or disable a specific game.
+            </summary>
+            <param name="gameNumber">The game number.</param>
+            <param name="enable">true to enable false to disable</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.EnterMaintenanceMode">
+            <summary>
+            LongPoll 0A, Enter Maintenance Mode.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.ExitMaintenanceMode">
+            <summary>
+            LongPoll 0B, Exit Maintenance Mode.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SetSoundVolume(System.Int32)">
+            <summary>
+            LongPoll 0C, Sets the Sound Volume of the EGM
+            </summary>
+            <param name="Volume"></param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.PlaySound(System.Int32)">
+            <summary>
+            LongPoll 0D, Plays a sound on the EGM
+            </summary>
+            <param name="soundNumber">The sound number to play</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.EnableRealTimeEventReporting(System.Boolean)">
+            <summary>
+            LongPoll 0E, Enable or disable Reel Events in real time. 
+            </summary>
+            <param name="Enable"></param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendMeters10Thru15">
+            <summary>
+            LongPoll 0F, Request to send specified meters.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTotalCancelledCreditMeter">
+            <summary>
+            LongPoll 10, Request to send specified meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTotalCoinInMeter">
+            <summary>
+            LongPoll 11, Request to send specified meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTotalCoinOutMeter">
+            <summary>
+            LongPoll 12, Request to send specified meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTotalDropMeter">
+            <summary>
+            LongPoll 13, Request to send specified meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTotalJackpotMeter">
+            <summary>
+            LongPoll 14, Request to send specified meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendGamesPlayedMeter">
+            <summary>
+            LongPoll 15, Request to send specified meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendGamesWonMeter">
+            <summary>
+            LongPoll 16, Request to send specified meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendGamesLostMeter">
+            <summary>
+            LongPoll 17, Request to send specified meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendGamesSinceLastPaDC">
+            <summary>
+            LongPoll 18, Send Games Since the last Power up and door closure.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendMeters11Thru15">
+            <summary>
+            LongPoll 19, Request to send specified meters.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendCurrentCredits">
+            <summary>
+            LongPoll 0x1A, Sends the current credits.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendHandPayInformation">
+            <summary>
+            LongPoll 1B, Request to send handpay information.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendMeters">
+            <summary>
+            LongPoll 1C, Request to send specified meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendBillMeters">
+            <summary>
+            LongPoll 1E, Request to send specified meters.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendGamingMachineID">
+            <summary>
+            LongPoll 1F, Request to send gaming machine ID.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendDollarValueOfBillMeter">
+            <summary>
+            LongPoll 20, Request to send specified meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.ROMSignatureVerification(System.Byte[])">
+            <summary>
+            LongPoll 21, ROM Signature verification based on provided seed.
+            </summary>
+            <param name="romSeed">Two Bytes for initial Seed.</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendCurrentRestrictedPromoCredits">
+            <summary>
+            LongPoll 27, Request to send specified meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTrueCoinInMeter">
+            <summary>
+            LongPoll 2A, Request to send specified meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTrueCoinOutMeter">
+            <summary>
+            LongPoll 2B, Request to send specified meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendCurrentHopperLevel">
+            <summary>
+            LongPoll 2C, Request the current hopper level.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTotalHandPaidCancelledCredits(System.Int32)">
+            <summary>
+            LongPoll 2D, Requests the total cancelled hand-paid credits. 
+            </summary>
+            <param name="machine">Machine id, 0000 = machine</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.DelayGamingMachine(System.Int32)">
+            <summary>
+            LongPoll 2E, Delays the Game machine for a specified Time
+            </summary>
+            <param name="Delay">Delay time in milliseconds.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendSelectMetersforGameN(System.Int32,IGT.PA.Framework.EgmClients.Sas.LongPoll.MeterCode)">
+            <summary>
+            LongPoll 2F, Send Select Meters for a specified game.
+            </summary>
+            <param name="machine">Game Number, 0000 for machine.</param>
+            <param name="meterCode">Meter Code</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendSelectMetersforGameN(System.Int32,System.Byte)">
+            <summary>
+            LongPoll 2F, Request specified meters for specified game number.
+            </summary>
+            <param name="gameNumber">Game number for the request, 0 for machine.</param>
+            <param name="meterCode">Meter code to request</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendSelectMetersforGameN(System.Int32,IGT.PA.Framework.EgmClients.Sas.LongPoll.MeterCode[])">
+            <summary>
+            LongPoll 2F, Request specified meters for specified game number.
+            </summary>
+            <param name="gameNumber">Game number for the request, 0 for machine.</param>
+            <param name="meterCode">Meter code to request</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendSelectMetersforGameN(System.Int32,System.Byte[])">
+            <summary>
+            LongPoll 2F, Request specified meters for specified game number.
+            </summary>
+            <param name="gameNumber">Game number for the request, 0 for machine.</param>
+            <param name="meterCode">Meter code to request</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send1BillsMeter">
+            <summary>
+            LongPoll 31, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send2BillsMeter">
+            <summary>
+            LongPoll 32, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send5BillsMeter">
+            <summary>
+            LongPoll 33, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send10BillsMeter">
+            <summary>
+            LongPoll 34, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send20BillsMeter">
+            <summary>
+            LongPoll 35, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send50BillsMeter">
+            <summary>
+            LongPoll 36, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send100BillsMeter">
+            <summary>
+            LongPoll 37, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send500BillsMeter">
+            <summary>
+            LongPoll 38, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send1000BillsMeter">
+            <summary>
+            LongPoll 39, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send200BillsMeter">
+            <summary>
+            LongPoll 3A, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send25BillsMeter">
+            <summary>
+            LongPoll 3B, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send2000BillsMeter">
+            <summary>
+            LongPoll 3C, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendCashOutTicketInformation">
+            <summary>
+            LongPoll 3D, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send2500BillsMeter">
+            <summary>
+            LongPoll 3E, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send5000BillsMeter">
+            <summary>
+            LongPoll 3f, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send10000BillsMeter">
+            <summary>
+            LongPoll 40, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send20000BillsMeter">
+            <summary>
+            LongPoll 41, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send25000BillsMeter">
+            <summary>
+            LongPoll 42, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send50000BillsMeter">
+            <summary>
+            LongPoll 43, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send100000BillsMeter">
+            <summary>
+            LongPoll 44, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Send250BillsMeter">
+            <summary>
+            LongPoll 45, Request specified Meter.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendCreditAmountOfAllBills">
+            <summary>
+            LongPoll 46, Request specified Meters.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendCoinAmountFromExternalCoinAcceptor">
+            <summary>
+            LongPoll 47, Request Coin amount from external coin acceptor.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendLastAcceptedBillInformation">
+            <summary>
+            LongPoll 48, Request last accepted bill information.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendNumberOfBillsCurrentlyInStacker">
+            <summary>
+            LongPoll 49, Request Bills in stacker.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendCreditAmountOfBillsCurrentlyInStacker">
+            <summary>
+            LongPoll 4A, Request credit value of bills in stacker.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SetEnhancedValidationID(System.Int32,System.Int32)">
+            <summary>
+            Set the Enhanced ValidationID for a specified machineID.
+            </summary>
+            <param name="machineID">Machine id to request.</param>
+            <param name="startSeq">Start Sequence.</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SetEnhancedValidationID(System.Byte[],System.Byte[])">
+            <summary>
+            LongPoll 4C, Set the Enhanced ValidatioID for a specified machineID.
+            </summary>
+            <param name="machineID">Three bytes for the MachineID</param>
+            <param name="startSeq">Three bytes for the StartSeq</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendEnhancedValidationInfo(System.Byte)">
+            <summary>
+            LongPoll 4D, Send Enhanced Validation Info. 
+            </summary>
+            <param name="bufferIndex">Validation info from buffer N.
+              0x00 = Current validation info.
+              0x01-0x1F = Validation info from buffer index n
+              FF = Look ahead at current validation info</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendValidationMeters(IGT.PA.Framework.EgmClients.Sas.LongPoll.ValidationType)">
+            <summary>
+            Send Validation Meters.
+            </summary>
+            <param name="validationType">The Validation type to return</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTotalNumberofGamesImplemented">
+            <summary>
+            LongPoll 51, Total number of games implemented.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendGameNMeters(System.Int32)">
+            <summary>
+            Retrieve the game meters for a specific game.
+            </summary>
+            <param name="gameNumber">Game Number, 0000 for machine.</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendGameNConfiguration(System.Int32)">
+            <summary>
+            Longpoll 53, Send game configuration for n game.
+            </summary>
+            <param name="gameNumber">Game number, 0000 for machine.</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendSasVersionAndMachineSerialNumber">
+            <summary>
+            LongPoll 54, Request SAS Version and machine serial number
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendSelectedGameNumber">
+            <summary>
+            LongPoll 55, Request selected game number.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendEnabledGameNumber">
+            <summary>
+            LongPoll 56, Request Enabled Game number.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendPendingCashoutInfo">
+            <summary>
+            LongPoll 57, Request pending cashout information.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.ReceiveValidationNumber(System.Int32,System.Int64)">
+            <summary>
+            Longpoll 58, Receive Validation Number.
+            </summary>
+            <param name="systemID"></param>
+            <param name="validation"></param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.GetExtendedMeters(System.Int32,IGT.PA.Framework.EgmClients.Sas.LongPoll.MeterCode[])">
+            <summary>
+            LongPoll 6F, Extended Meters. 
+            </summary>
+            <param name="machine"></param>
+            <param name="requestMeterCode">An array of meter codes to request.</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTicketValidationData">
+            <summary>
+            LongPoll 70, Request ticket validation data.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.RedeemTicket(IGT.PA.Framework.EgmClients.Sas.Aft.TransferFunds.TransferCode,System.Int32,System.Byte,System.Int32)">
+            <summary>
+            LongPoll 71, Redeem Ticket.
+            </summary>
+            <param name="transferCode"></param>
+            <param name="amount"></param>
+            <param name="parsingCode">00 for Enhanced Validation.</param>
+            <param name="validationNumber"></param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.RedeemTicket(IGT.PA.Framework.EgmClients.Sas.Aft.TransferFunds.TransferCode)">
+            <summary>
+            LongPoll 71, Redeem Ticket (interrogate). 
+            </summary>
+            <param name="transferCode"></param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.AftRegisterGamingMachine(System.Int32,IGT.PA.Framework.EgmClients.Sas.SasEGM)">
+            <summary>
+            LongPoll 73, Register the EGM for Aft. 
+            </summary>
+            <param name="registrationCode">Registration code.</param>
+            <param name="egm">Sas EGM to register</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.AftRegisterGamingMachine(System.Int32)">
+            <summary>
+            LongPoll 73, Register the EGM for Aft. (interrogate)
+            </summary>
+            <param name="registrationCode">Registration code.</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.AftGameLockAndStatusRequest(IGT.PA.Framework.EgmClients.Sas.Aft.Lock.LockCode,IGT.PA.Framework.EgmClients.Sas.Aft.Lock.LockFlags,System.Int32)">
+            <summary>
+            LongPoll 74, Aft Game Lock and status request.
+            </summary>
+            <param name="lockCode">Aft Lock code, same as Aft.Lock.LockCode</param>
+            <param name="condition">Acceptable conditions.</param>
+            <param name="timeout">Timeout in MS.</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SetCustomAftTicketData(IGT.PA.Framework.EgmClients.Sas.Aft.Ticket.TicketFunction,IGT.PA.Framework.EgmClients.Sas.Aft.Ticket.DataElement,System.String)">
+            <summary>
+            LongPoll 76, Sets the data for a custom Aft ticket.
+            </summary>
+            <param name="ticketFunction">Function to perform.</param>
+            <param name="dataCode">Element to perform on.</param>
+            <param name="ticketData">Data for ticket.</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.ExtendedValidationStatus(System.Byte[],System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            LongPoll 7B, Extended Validation Status.
+            </summary>
+            <param name="controlMask">2 bytes that define control of peripherals 0, Do not allow 1, Allow.
+                bit 0  - Printer as cashout device.
+                bit 1  - Printer as handpay receipt device.
+                bit 2  - Validate handpays and handpay receipts.
+                bit 3  - Print Restricted tickets
+                bit 4  - Tickets for foreign resisted amounts.
+                bit 5  - Ticket redemption.
+                bit 6  - Reserved
+                bit 7  - Cancel Configuration.
+            </param>
+            <param name="controlStates">2 bytes that define state of peripherals 0, Do not allow 1, Allow.
+                bit 0  - Printer as cashout device.
+                bit 1  - Printer as handpay receipt device.
+                bit 2  - Validate handpays and handpay receipts.
+                bit 3  - Print Restricted tickets
+                bit 4  - Tickets for foreign resisted amounts.
+                bit 5  - Ticket redemption.
+                bit 6  - Reserved
+                bit 7  - Cancel Configuration.</param>
+            <param name="cashableExp">Expiration date for cashable.</param>
+            <param name="restrictedExp">Expiration date for restricted.</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SetExtendedTicketData(IGT.PA.Framework.EgmClients.Sas.LongPoll.TicketDataCode,System.String)">
+            <summary>
+            LongPoll 7C, send extended Ticket Data
+            </summary>
+            <param name="datacode"></param>
+            <param name="ticketData">Ticket data to encode.
+             40 max for Location, Address1, Address2
+             16 max for Restricted and Debit Ticket Title</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SetTicketData(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            LongPoll 7D, Set Ticket Data.
+            </summary>
+            <param name="hostID">Host identification number</param>
+            <param name="expDays">Number of days before ticket expires</param>
+            <param name="location">Location Text data, 40 characters max</param>
+            <param name="address1">Address1, 40 characters max</param>
+            <param name="address2">Address2, 40 characters max</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendCurrentDateAndTime">
+            <summary>
+            LongPoll 7E, Request to send current date and time.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SetDateAndTime(System.String,System.String)">
+            <summary>
+            LongPoll 7F, Set Date and time
+            </summary>
+            <param name="setDate">Date to set (format: MMDDYYYY)</param>
+            <param name="setTime">Time to Set (format: HHMMSS) </param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendCumulativeProgressiveWins(System.Int32)">
+            <summary>
+            LongPoll 83, Send Cumulative progressive wins.
+            </summary>
+            <param name="gameNumber">Game number (0000 for Gaming Machine)</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendProgressiveWinAmount">
+            <summary>
+            LongPoll 84, Request to send progressive win amount.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendSASProgressiveWinAmount">
+            <summary>
+            LongPoll 85, Request to send SAS progressive win amount.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendMultipleSASProgressiveWinAmounts">
+            <summary>
+            LongPoll 86, Request to send multiple SAS progressive win amounts.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.InitiateLegacyBonusPay(System.Int32,IGT.PA.Framework.EgmClients.Sas.LongPoll.LegacyBonusTaxType)">
+            <summary>
+            LongPoll 8A, Initiate Legacy Bonus Pay
+            </summary>
+            <param name="bonusAmt">Bonus Amount in cents</param>
+            <param name="legacyBonusType">Tax Type of bonus pay</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.InitiateMultipliedJackpotMode(System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            LongPoll 8B, Initiate Multiplied Jackpot Mode.
+            </summary>
+            <param name="minWin">Minimum Win, Inclusive.</param>
+            <param name="maxWin">Maximum Win, Inclusive.</param>
+            <param name="multiplier">Multiplier for the Jackpot, Max 10</param>
+            <param name="deductible">True if the jackpot is deductable</param>
+            <param name="enable">Enable the jackpot</param>
+            <param name="maxWagerOnly">Award on max bet only</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.EnterTournamentMode(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            LongPoll 8C, Enter tournament mode.
+            </summary>
+            <param name="gameNumber">Game Number (0000 for machine)</param>
+            <param name="minutes">Minutes for the tournament time</param>
+            <param name="seconds">Seconds for the tournament time</param>
+            <param name="credits">Starting credit amount for the session</param>
+            <param name="enable">Enabled or disabled</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendCardInformation">
+            <summary>
+            LongPoll 8E, Request to send card information.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendReelStopInformation">
+            <summary>
+            LongPoll 8F, Request to send reel stop information.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendLegacyBonusWinAmount">
+            <summary>
+            LongPoll 90, Request to send legacy bonus win amount.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.ResetHandPay">
+            <summary>
+            LongPoll 94, Reset handpay.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTournamentGamesPlayed(System.Int32)">
+            <summary>
+            LongPoll 95, Send Tournament Games played
+            </summary>
+            <param name="machine">Gaming Machine identification number</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTournamentGamesWon(System.Int32)">
+            <summary>
+            LongPoll 96, Send Tournament Games won.
+            </summary>
+            <param name="machine">Gaming Machine identification number</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTournamentCreditsWagered(System.Int32)">
+            <summary>
+            LongPoll 97, Send Tournament credits wagered.
+            </summary>
+            <param name="machine">Gaming Machine identification number</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTournamentCreditsWon(System.Int32)">
+            <summary>
+            LongPoll 98, Send Tournament credits won
+            </summary>
+            <param name="machine">Gaming Machine identification number</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTournamentMeters95Thru98(System.Int32)">
+            <summary>
+            LongPoll 99, Send Tournament Meters 95-98.
+            </summary>
+            <param name="machine">Gaming Machine identification number</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendLegacyBonusMeters(System.Int32)">
+            <summary>
+            LongPoll 9A, Send legacy bonus meters.
+            </summary>
+            <param name="machine">Gaming Machine identification number</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendEnabledFeatures(System.Int32)">
+            <summary>
+            LongPoll A0, Send Enabled Features.
+            </summary>
+            <param name="machine">Gaming Machine identification number</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendCashoutLimit(System.Int32)">
+            <summary>
+            LongPoll A4, Send cashout limit.
+            </summary>
+            <param name="machine">Gaming Machine identification number</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.EnableJackpotResetMethod(System.Boolean)">
+            <summary>
+            LongPoll A8, Enabled Jackpot Reset Method.
+            </summary>
+            <param name="resetToCreditMeter">False for standard handpay, false to reset to credit meter.</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.EnableAutoRebet(System.Boolean)">
+            <summary>
+            LongPoll AA, Enable Auto Rebet.
+            </summary>
+            <param name="enable">Enable the auto rebet.</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.GetAltExtendedMeters(System.Int32,IGT.PA.Framework.EgmClients.Sas.LongPoll.MeterCode[])">
+            <summary>
+            LongPoll AF, Alt Extended Meters.
+            </summary>
+            <param name="machine">Gaming Machine identification number</param>
+            <param name="meterCodes">List of meters to send</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendCurrentPlayerDenom">
+            <summary>
+            LongPoll B1 Request to send the current player denom.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendEnabledPlayerDenoms">
+            <summary>
+            LongPoll B2, Request to send the enabled player denoms.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendTokenDenom">
+            <summary>
+            LongPoll B3, Request to send the token denom.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendWagerCategoryInfo(System.Int32,System.Int32)">
+            <summary>
+            LongPoll B4, Send wager category info.
+            </summary>
+            <param name="gameNumber">Game Number (0000 for machine)</param>
+            <param name="wagerCategory">Wager Category (0000 for total coin in)</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SendExtendedGameNInformation(System.Int32)">
+            <summary>
+            LongPoll B5, Send extended game N information.
+            </summary>
+            <param name="gameNumber">Game Number (0000 for gaming machine)</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.GetMeterCollectionStatus(IGT.PA.Framework.EgmClients.Sas.LongPoll.MeterStatus)">
+            <summary>
+            LongPoll B6, Meter Collection Status.
+            </summary>
+            <param name="status">Status of the collection</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.SetMachineNumbers(System.Int32,System.String)">
+            <summary>
+            LongPoll B7, Set machine numbers
+            </summary>
+            <param name="asset">Asset Number</param>
+            <param name="floorLocation">Floor Location Max 40</param>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.Dummy">
+            <summary>
+            LongPoll FD, Dummy Command.
+            </summary>
+            <returns>A SAS LongPoll Packet containing the byte code for this command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.LongPollPacket.#ctor(System.Byte,System.Boolean,System.Boolean)">
+            <summary>
+            The Byte code for a SAS command. 
+            </summary>
+            <param name="poll">The poll number.</param>
+            <param name="requireCrc">If the command requires a CRC.</param>
+            <param name="requireLength">If the command requires the length to be appended.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.LongPollPacket.#ctor(System.Byte,System.Boolean,System.Boolean,System.Byte[])">
+            <summary>
+            The Byte code for the SAS command.
+            </summary>
+            <param name="poll">The poll number.</param>
+            <param name="requireCrc">If the command requires a CRC</param>
+            <param name="requireLength">If the command requires the length to be appended.</param>
+            <param name="data">The data bytes of the command.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.LongPollPacket.ToString">
+            <summary>
+            Converts the SAS command to a string.
+            </summary>
+            <returns>A string of the command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LongPoll.LongPollPacket.ToByteArray">
+            <summary>
+            Converts the SAS command into a byte array.
+            </summary>
+            <returns>A byte array of the SAS command</returns>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Sas.LongPoll.LongPollPacket.Packet">
+            <summary>
+            The Packet to send to the EGM.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.CumulativeMetersCredits">
+            <summary>
+            Poll 0x1D, Request the Cumulative meters in credits.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.LoadNonCashableMoneyDollars(System.Int32)">
+            <summary>
+            Poll 0x22, Load NonCashable Money in Dollars.
+            </summary>
+            <param name="dollars">Amount to be loaded.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.LoadPromotionalMoneyDollars(System.Int32)">
+            <summary>
+            Poll 0x23, Load Promotional Money in Dollars.
+            </summary>
+            <param name="dollars">Amount to be loaded.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.ForceCashoutToHost">
+            <summary>
+            Poll 0x24, Force Cashout to host.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.ForceCashoutFromGameMachine">
+            <summary>
+            Poll 0x25, Force cashout from Game Machine.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.RequestCashoutDollarAmount">
+            <summary>
+            Poll 0x26, Request Cashout dollar amount.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.RequestCurrentPromotionalCredits">
+            <summary>
+            Poll 0x27 Request current Promotional Credits.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.EftTransactionLog">
+            <summary>
+            Poll 0x28, Eft transaction Log.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.LoadCashableMoney(System.Int32)">
+            <summary>
+            Poll 0x29, Load cashable Money in dollars.
+            </summary>
+            <param name="dollars">Amount to be loaded.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.LoadNonCashableCredits(System.Int32)">
+            <summary>
+            Poll 0x62 Load NonCashable credits
+            </summary>
+            <param name="credits">Amount to be loaded.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.LoadPromotionalCredits(System.Int32)">
+            <summary>
+            Poll 0x63, Load Promotional Credits.
+            </summary>
+            <param name="credits">Credits to be loaded.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.ForceCashoutToHostCredits">
+            <summary>
+            Poll 0x64, Force cashout to host Credits.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.ForceCashoutFromGamingMachineCredits">
+            <summary>
+            Poll 0x65, Force cashout from gaming machine credits.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.RequestForCashoutCreditAmount">
+            <summary>
+            Poll 0x66, Request for cashout credit amount. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.CashoutWinToHost">
+            <summary>
+            Poll 0x67, Cashout win to host. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.LoadCashableCredits(System.Int32)">
+            <summary>
+            Poll 0x69, Load Cashable Credits. 
+            </summary>
+            <param name="credits">Amount to be loaded.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.RequestAvailableEftTransfers">
+            <summary>
+            Poll 6A, Request available Eft transfers.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.ForcePromotionalCashoutToHost">
+            <summary>
+            Poll 0x6B, Force promotional cashout to host.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.EftPacket.#ctor(System.Byte,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Creates a new instance of an Eft Packet.
+            </summary>
+            <param name="poll"></param>
+            <param name="requireCrc"></param>
+            <param name="appendTransaction"></param>
+            <param name="ack"></param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.EftPacket.ToString">
+            <summary>
+            Converts the packet to a string.
+            </summary>
+            <returns>A string of the packet.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Eft.EftPacket.ToByteArray">
+            <summary>
+            A byte array of the packet.
+            </summary>
+            <returns>A Byte array of the packet.</returns>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Sas.Eft.EftPacket.Packet">
+            <summary>
+            The Eft Packet to send.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Sas.Eft.EftPacket.AckPacket">
+            <summary>
+            The Ack Packet
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Sas.Eft.EftMoneyPacket">
+            <summary>
+            An Eft Packet that contains Money information.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.GetCommandByte(System.String)">
+            <summary>
+            Gets the command from the string and returns the byte value of the command
+            </summary>
+            <param name="stringToConvert">String to convert</param>
+            <returns>One byte representing the command</returns>
+            <example>"$12 - Main door open", Returns 0x12.</example>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.StringCommandToByteArray(System.String)">
+            <summary>
+            Converts series of hex (in string) into byte array.
+            </summary>
+            <param name="stringToConvert">The string to convert.</param>
+            <returns>A byte array of the input string.</returns>
+            <remarks>Does not handle single character hex. ie. A 1 F C.</remarks>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.ByteArrayCommandToString(System.Byte[])">
+            <summary>
+            Converts series of hex (in string) into byte array
+            </summary>
+            <param name="bytesToConvert">Byte array to be converted.</param>
+            <returns>The bytes converted to a string.</returns>
+            <example>Passed: {0xff,0x10,0xa} 
+            Return: "FF 10 0A" </example>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.AddCrc(System.Byte[])">
+            <summary>
+            CRC a Byte array and append the bytes to the input.
+            </summary>
+            <param name="tempBytes">Bytes to add CRC to.</param>
+            <returns>A byte array containing the original bytes and 2 CRC bytes.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.GetResponseValue(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Extracts the data from byte[]. It returns null if the data to be extracted is longer than the actual data.
+            </summary>
+            <param name="data">byte[] has the portion of data needed to be extracted.  </param>
+            <param name="index">offset of byte[]</param>
+            <param name="numOfBytes">number of bytes to be extracted</param>
+            <returns>The data portion of a Packet containing data.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.CalcCrc(System.Byte[])">
+            <summary>
+            Calculates the CRC of a Byte array.
+            </summary>
+            <param name="data">The Byte array to be CRCed</param>
+            <returns>The CRC of the input data.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.IsValidCrc(System.Byte[])">
+            <summary>
+            Checks a Data array to ensure that the data has a proper CRC.
+            </summary>
+            <param name="data">Data to be verified.</param>
+            <returns>True if it is a valid CRC.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.IsValidCrc(System.String)">
+            <summary>
+            Checks a Data string to ensure that the data has a proper CRC.
+            </summary>
+            <param name="stringData">Data to be verified.</param>
+            <returns>True if it is a valid CRC.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.GetResponseCrc(System.Byte[])">
+            <summary>
+            Extracts the CRC from the message. Last 2 bytes of the message is the CRC.
+            </summary>
+            <param name="data">Data to extract the CRC from.</param>
+            <returns>CRC bytes</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.FormatStringToSasString(System.String)">
+            <summary>
+            FOrmats a string to a SAS style string.
+            </summary>
+            <param name="rawString">String to be converted.</param>
+            <returns>A SAS formatted string.</returns>
+            <example>Input: "Hello" Returns: "48 65 6C 6C 6F" </example>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.FormatStringToByteArray(System.String)">
+            <summary>
+            Formats a string as a byte array.
+            </summary>
+            <param name="rawString">String to be converted.</param>
+            <returns>A byte array of the string.</returns>
+            <example>Input: "Hello" Returns: {48, 65, 6C, 6C, 6F}</example>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.FormatBCDStringToByteArray(System.String)">
+            <summary>
+            Formats a string to a BCD String. 
+            </summary>
+            <param name="rawString">Converts a string number to a BCD byte array.</param>
+            <returns>A BCD byte array</returns>
+            <example>Input: "1000"  Returns: {10,00} </example>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.FormatSasString(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Formats a string as a SAS String.
+            </summary>
+            <param name="sString">Input String.</param>
+            <param name="length">Length of the return string.</param>
+            <param name="reverse">Reverse the return string.</param>
+            <returns>A string formatted to send via SAS.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.FormatSasBcdString(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Formats a string as a SAS BCD String.
+            </summary>
+            <param name="sString">Input String.</param>
+            <param name="length">Length of the return string.</param>
+            <param name="reverse">Reverse the return string.</param>
+            <returns>A BCD string formatted to send via SAS.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.FormatSasBcdBytes(System.String,System.Int32)">
+            <summary>
+            Formats a string as a byte array.
+            </summary>
+            <param name="sString">String to be converted</param>
+            <param name="length">Length of the return byte array.</param>
+            <returns>A byte array of the input string.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.FormatSasBcdBytes(System.Int64,System.Int32)">
+            <summary>
+            Formats an integer as a BCD byte array
+            </summary>
+            <param name="data">Data to format.</param>
+            <param name="len">The length of the number to be padded. This will pad with '0' </param>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.SasUtilities.IncludeCrc(System.Byte)">
+            <summary>
+            Checks to see if a command requires a CRC.
+            </summary>
+            <param name="command">The command to check</param>
+            <returns>True if the command requires a CRC.</returns>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Sas.Aft.Register">
+            <summary>
+            Class for Registering the egm for Aft Sas transfers.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.Register.#ctor">
+            <summary>
+            Empty Register Packet.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.Register.#ctor(System.Byte,IGT.PA.Framework.EgmClients.Sas.SasEGM,System.String)">
+            <summary>
+            Registration Packet.
+            </summary>
+            <param name="regCode">The Registration Code.</param>
+            <param name="egm">The EGM to send to.</param>
+            <param name="posId">The Point of Sale ID.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.Register.ToString">
+            <summary>
+            Converts to a string.
+            </summary>
+            <returns>a String of the packet</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.Register.ToByteArray">
+            <summary>
+            Converts to Byte Array.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Sas.Aft.Lock">
+            <summary>
+            Creates a Lock Packet.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.Lock.#ctor">
+            <summary>
+            Creates a default lock packet.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.Lock.#ctor(IGT.PA.Framework.EgmClients.Sas.Aft.Lock.LockCode,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int32)">
+            <summary>
+            Creates a lock packet.
+            </summary>
+            <param name="lockCode">The Lock Code.</param>
+            <param name="txToMachine">Allow Transfer to Machine.</param>
+            <param name="txFromMachine">Allow Transfer from Machine.</param>
+            <param name="txToPrinter">Allow Transfer to Printer.</param>
+            <param name="bonusTo">Allow Bonus to Machine.</param>
+            <param name="lockTo">Allow lock timeout. </param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.Lock.ToString">
+            <summary>
+            Converts to a string.
+            </summary>
+            <returns>Converts packet to string.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.Lock.ToByteArray">
+            <summary>
+            Convert to Byte Array.
+            </summary>
+            <returns>Byte array of Packet.</returns>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Sas.Aft.TransferFunds">
+            <summary>
+            Creates ticket packets. 
+            </summary>
+            <Notes>Currently Does not support Ticket Receipt Data</Notes>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.TransferFunds.#ctor(System.Boolean)">
+            <summary>
+            Creates a new Transfer funds packet.
+            </summary>
+            <param name="defaultSettings">Set Default Settings.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.TransferFunds.#ctor(System.Boolean,IGT.PA.Framework.EgmClients.Sas.SasEGM)">
+            <summary>
+            Creates a new Transfer funds packet.
+            </summary>
+            <param name="defaultSettings">default settings.</param>
+            <param name="egm">Specified EGM.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.TransferFunds.SetDefault(System.Boolean)">
+            <summary>
+            Sets the packet to the default settings.
+            </summary>
+            <param name="defaultSettings">Set Default</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.TransferFunds.#ctor(System.String,System.String,System.Boolean,System.String,IGT.PA.Framework.EgmClients.Sas.SasEGM)">
+            <summary>
+            Transfer funds packet. 
+            </summary>
+            <param name="expDate">Expiration date.</param>
+            <param name="poolid">Defines the PoolID.</param>
+            <param name="appendTID">Append the transaction ID.</param>
+            <param name="transactionMessage">Transaction Message.</param>
+            <param name="egm">EGM for the funds transfer.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.TransferFunds.ToString">
+            <summary>
+            Converts the packet to a string.
+            </summary>
+            <returns>A string of the converted packet.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.TransferFunds.ToByteArray">
+            <summary>
+            Converts the packet to a byte array.
+            </summary>
+            <returns>A Byte array of the packet.</returns>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Sas.Aft.TransferFunds.Packet">
+            <summary>
+            The packet for the Transfer funds.
+            </summary>
+        </member>
+        <member name="T:IGT.PA.Framework.EgmClients.Sas.Aft.Ticket">
+            <summary>
+            Ticket transfer.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.Aft.Ticket.TicketPacket(System.String)">
+            <summary>
+            Gets the ticket packet.
+            </summary>
+            <param name="data">Data to use for the ticket packet</param>
+            <returns>A ticket packet</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.#ctor">
+            <summary>
+            Creates a new instance of LocalSas.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.#ctor(System.String,IGT.PA.Framework.EgmClients.Sas.SasEGM)">
+            <summary>
+            Creates a new instance of LocalSas.
+            </summary>
+            <param name="portName">The Port to connect to (ex com1).</param>
+            <param name="segm">The default EGM to communicate to.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.AddSasEgm(IGT.PA.Framework.EgmClients.Sas.SasEGM,System.Boolean)">
+            <summary>
+            Adds an EGM to be Polled. 
+            </summary>
+            <param name="egm">SASEGM to be added</param>
+            <param name="currentEgm">Set the EGM to be the one for sending SAS commands.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.SetCurrentSasEgm(System.Int32)">
+            <summary>
+            Sets the EGM to send Sas commands to.
+            </summary>
+            <param name="pollNumber">the poll number of the EGM to send to.</param>
+            <returns>returns false if EGM could not be found.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.RemoveSasEgm(System.Int32)">
+            <summary>
+            Removes the specified EGM from the polling loop. Note: you cannot remove the current EGM.
+            </summary>
+            <param name="pollNumber"></param>
+            <returns>True if EGM is removed.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.Connect(System.String)">
+            <summary>
+            Attempts to connect to a specified Port. 
+            </summary>
+            <param name="comPort"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.Start">
+            <summary>
+            Start Communication with SAS.
+            </summary>
+            <returns>Returns true if COM is opened successfully, false if an error occurs.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.Stop">
+            <summary>
+            Stops the communication to and from the host.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.DataReceivedEvent(System.String)">
+            <summary>
+            Data Received from the SAS protocol. 
+            This data is sent one byte at a time and as soon as the bytes are received.
+            </summary>
+            <param name="data">Data from the comport</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.TxPoll(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Polling of SAS. 
+            The Parity must be set to Mark in order for the polling to work correctly.
+            </summary>
+            <param name="sender">The object that fired the event.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.SendLongPoll(System.Byte[],System.String)">
+            <summary>
+            Send a specific Long poll to a specified address. 
+            </summary>
+            <param name="poll">Byte of the long poll</param>
+            <param name="SASAddress">The address to send to.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.IsLongPoll(System.Byte)">
+            <summary>
+            Checks to see if the command is a LongPoll Command.
+            </summary>
+            <param name="command">Command.</param>
+            <returns>True if the command is a LongPoll Command.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.Disconnect">
+            <summary>
+            Disconnects and stops communication from and to LocalSas.
+            </summary>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.SendRaw(System.String)">
+            <summary>
+            Sends a raw string from LocalSas
+            </summary>
+            <param name="dataToSend">Data to send from LocalSas</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.Send(System.String)">
+            <summary>
+            Prepares and sends data from LocalSas.
+            </summary>
+            <param name="dataToSend">The data to send.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.SendRaw(System.String,System.Boolean)">
+            <summary>
+            Sends Raw data from LocalSas.
+            </summary>
+            <param name="dataToSend">Data to send from LocalSas.</param>
+            <param name="appendCrc">Append a CRC before sending the data.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.Send(System.Byte[])">
+            <summary>
+            Sends a byte array from LocalSas.
+            </summary>
+            <param name="dataToSend">Data to send.</param>
+            <returns>true if sent.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.Send(System.Byte[],System.Boolean)">
+            <summary>
+            Send data from LocalSas.
+            </summary>
+            <param name="dataToSend">Data to send.</param>
+            <param name="appendCrc">Append CRC before sending data.</param>
+            <returns>True if sent.</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.Send(System.String,System.Int32)">
+            <summary>
+            Sends data and waits for a specified time.
+            </summary>
+            <param name="data">Data to send.</param>
+            <param name="timeout">Timeout in MS.</param>
+            <returns>Always returns "".</returns>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.Send(IGT.PA.Framework.EgmClients.Sas.Eft.EftPacket)">
+            <summary>
+            Sends an Eft packet.
+            </summary>
+            <param name="eftPacket">Eft Packet to send.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.Send(IGT.PA.Framework.EgmClients.Sas.Aft.TransferFunds)">
+            <summary>
+            Sends a Transfer funds packet.
+            </summary>
+            <param name="ticketPacket">TransferFunds Packet </param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.Send(IGT.PA.Framework.EgmClients.Sas.LongPoll.LongPollPacket)">
+            <summary>
+            Sends a LongPoll Packet.
+            </summary>
+            <param name="longPollPacket">LongPoll Packet to send.</param>
+        </member>
+        <member name="M:IGT.PA.Framework.EgmClients.Sas.LocalSas.Connect(System.String,System.Int32)">
+            <summary>
+            Connects to LocalSas.
+            </summary>
+            <param name="connectionStr">String to connect</param>
+            <param name="interCommandDelay">Inter command Delay, This will be ignored.</param>
+            <returns>Is Connected.</returns>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Sas.LocalSas.FilterGP">
+            <summary>
+            Gets or Sets the filtering of General poll information "00".
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Sas.LocalSas.SendGPs">
+            <summary>
+            Gets or sets if LocalSas sends GP's to EGM.
+            </summary>
+        </member>
+        <member name="P:IGT.PA.Framework.EgmClients.Sas.LocalSas.IsConnected">
+            <summary>
+            Returns true if LocalSas is Active and communicating.
+            </summary>
+        </member>
+    </members>
+</doc>

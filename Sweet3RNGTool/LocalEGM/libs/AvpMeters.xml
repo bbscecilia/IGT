@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfAvpMeterInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AvpMeterInfo>
+    <Name>CURRENT:BILL_IN_COUNT_IN_STACKER</Name>
+    <Path>/Meters/Current/1</Path>
+    <Type>METER_COUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:BILL_IN_AMOUNT_IN_STACKER</Name>
+    <Path>/Meters/Current/2</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:WIN</Name>
+    <Path>/Meters/Current/24</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+  
+  <AvpMeterInfo>
+    <Name>{Master,Period}:AMOUNT_PLAYED_CASHABLE</Name>
+    <Path>/Meters/{Master,Period}/1</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>{Master,Period}:{GameID}:COUNTS:GAMES_PLAYED_WITH_MAX_BET</Name>
+    <Path>/Meters/{Master,Period}/Games/{GameID}/Counts/1</Path>
+    <Type>METER_COUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:CURRENT_EXTERNAL_BONUS_WIN</Name>
+    <Path>/Meters/Current/5</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>{Master,Period}:COIN_IN_COUNT</Name>
+    <Path>/Meters/{Master,Period}/8</Path>
+    <Type>METER_COUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>{Master,Period}:EFT_IN_AMOUNT_CASHABLE</Name>
+    <Path>/Meters/{Master,Period}/10</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:CASH_IN_AMOUNT</Name>
+    <Path>/Meters/Current/3</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:COMMITED_BET_AMOUNT</Name>
+    <Path>/Meters/Current/4</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:LAST_BILL_IN_AMOUNT</Name>
+    <Path>/Meters/Current/6</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:LAST_BILL_IN_COUNTRY</Name>
+    <Path>/Meters/Current/7</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:LAST_HANDPAY</Name>
+    <Path>/Meters/Current/8</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:LAST_PARTIAL_HANDPAY</Name>
+    <Path>/Meters/Current/9</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:PENDING_HANDPAY</Name>
+    <Path>/Meters/Current/10</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:PLAYER_CREDIT</Name>
+    <Path>/Meters/Current/11</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:PREVIOUS_PLAYER_CREDIT</Name>
+    <Path>/Meters/Current/12</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:PLAYER_CREDITS_CASHABLE</Name>
+    <Path>/Meters/Current/13</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:PLAYER_CREDITS:NON_RESTRICTED_PROMOTIONAL</Name>
+    <Path>/Meters/Current/14</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:PLAYER_CREDITS:RESTRICTED_PROMOTIONAL</Name>
+    <Path>/Meters/Current/15</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:PLAYER_CREDITS:FOREIGN_RESTRICTED_PROMOTIONAL</Name>
+    <Path>/Meters/Current/16</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:PLAYER_CREDITS:DEMO</Name>
+    <Path>/Meters/Current/17</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:PLAYER_CREDITS:TOURNAMENT</Name>
+    <Path>/Meters/Current/18</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:PLAYER_PAID</Name>
+    <Path>/Meters/Current/19</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:SAS_LAST_DEDUCTIBLE_LEGACY_BONUS_WIN</Name>
+    <Path>/Meters/Current/20</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:SAS_LAST_NON_DEDUCTIBLE_LEGACY_BONUS_WIN</Name>
+    <Path>/Meters/Current/21</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:SAS_LAST_WAGER_MATCH_LEGACY_BONUS_WIN</Name>
+    <Path>/Meters/Current/22</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:TOURNAMENT_WON</Name>
+    <Path>/Meters/Current/23</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>CURRENT:NON_CASH_CASH_IN_AMOUNT</Name>
+    <Path>/Meters/Current/25</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>{Master,Period}:AMOUNT_PLAYED_NON_RESTRICTED_PROMOTIONAL</Name>
+    <Path>/Meters/{Master,Period}/2</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>{Master,Period}:AMOUNT_PLAYED_RESTRICTED_PROMOTIONAL</Name>
+    <Path>/Meters/{Master,Period}/3</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+
+  <AvpMeterInfo>
+    <Name>{Master,Period}:BILL_IN_COUNT_STACKED</Name>
+    <Path>/Meters/{Master,Period}/4</Path>
+    <Type>METER_AMOUNT</Type>
+  </AvpMeterInfo>
+</ArrayOfAvpMeterInfo>
